@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Generic Vopěnka’s Principle | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="Generic Vopěnka’s Principle" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a talk at the Rutgers Logic Seminar in New Jersey, May 2, 2016." />
+<meta property="og:description" content="This is a talk at the Rutgers Logic Seminar in New Jersey, May 2, 2016." />
+<link rel="canonical" href="http://localhost:4000/talks/2016/04/19/generic-vopenkas-principle.html" />
+<meta property="og:url" content="http://localhost:4000/talks/2016/04/19/generic-vopenkas-principle.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-04-19T00:00:00-04:00" />
+<script type="application/ld+json">
+{"description":"This is a talk at the Rutgers Logic Seminar in New Jersey, May 2, 2016.","@type":"BlogPosting","url":"http://localhost:4000/talks/2016/04/19/generic-vopenkas-principle.html","headline":"Generic Vopěnka’s Principle","dateModified":"2016-04-19T00:00:00-04:00","datePublished":"2016-04-19T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/talks/2016/04/19/generic-vopenkas-principle.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/header.JPG" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>Generic Vopěnka's Principle</h1>
+
+	
+      This is a talk at the <a href="http://www.math.rutgers.edu/~ssc127/seminar.html" target="_blank">Rutgers Logic Seminar</a> in New Jersey, May 2, 2016.<!--more--></p>
+<img src="/images/HillCenter.jpg" style="float:left; padding: 10px;"/>
+
+It is well-established folklore that Petr Vopěnka introduced <em>Vopěnka's Principle</em> to satirize large cardinals and had the intention of soon showing it to be inconsistent with ${\rm ZFC}$. But his proof broke and Vopěnka's Principle came, over the years, to be viewed as an important set-theoretic principle with strong connections to category theory (see [bibcite key=AdamekRosicky:vopenka]). Vopěnka's Principle asserts that for every proper class of structures of the same first-order language, there are two distinct ones between which there is an elementary embedding. It is not difficult to imagine by considering classes of structures of the form $\langle V_\alpha,\in\rangle$ that Vopěnka's Principle will imply the existence of large cardinals. Vopěnka's Principle is a second-order assertion because we are quantifying over all classes of structures and it can be formalized in ${\rm GBC}$, ${\rm KM}$ or one's favorite class set theory. Here is an elegant reformulation of Vopěnka's Principle: for every sequence $\langle M_\alpha\mid \alpha\in{\rm ORD}\rangle$ of distinct structures  of the same first-order language, there are $\alpha<\beta$ such that $M_\alpha$ elementarily embeds into $M_\beta$. I recently stumbled onto this formulation, and so, for fun, let's prove it. I will argue using a class version of Fodor's Lemma, but I suspect that there might be much easier proofs.
+<p>
+<strong>Lemma</strong>: Suppose $F:{\rm ORD}\to{\rm ORD}$ is regressive. Then $F$ is constant on a proper class. </p>
+<p><strong>Proof</strong>: Suppose not. Then for every ordinal $\alpha$, there is another ordinal $\gamma_\alpha$ such that for $\gamma>\gamma_\alpha$, $F(\gamma)\neq\alpha$. Let $C_\alpha$ be the tail of the ordinals above $\gamma_\alpha$. It is not difficult to see that the diagonal intersection $C=\Delta_{\alpha\in{\rm ORD}}C_\alpha$ is a class club, and so in particular nonempty. So let $\gamma\in C$. It follows that $\gamma\in C_\alpha$ for all $\alpha<\gamma$. In particular, $\gamma\in C_\delta$, where $F(\gamma)=\delta$. But this is impossible, since by definition of $C_\delta$, $F(\gamma)\neq\delta$. $\square$</p>
+
+<p>In one direction, suppose Vopěnka's Principle holds and that $\langle M_\alpha\mid\alpha\in{\rm ORD}\rangle$ is a sequence of structures of some first-order language. Shift the enumeration to start from 1. Define a regressive $F:{\rm ORD}\to {\rm ORD}$ as follows. If there is $\beta<\alpha$ such that $M_\alpha$ elementarily embeds into $M_\beta$, then we let $F(\alpha)=\beta$ where $\beta$ is least such, and otherwise $F(\alpha)=0$. So there is some $\gamma$ such that $F(\alpha)=\gamma$ for a proper class $\mathcal C$ of $\alpha$. First, suppose $\gamma=0$. By Vopěnka's Principle, there are $\alpha\neq\eta\in \mathcal C$ such that $M_\alpha$ elementarily embeds into $M_\eta$, and so $\alpha<\eta$. Next, suppose $\gamma=\beta>0$. Then there is a proper class of $\alpha$ such that $M_\alpha$ elementarily embeds into $M_\beta$. Since by cardinality considerations, $M_\beta$ has at most $2^{|M_\beta|}$-many elementary substructures, there must be $\alpha_1<\alpha_2$ in $\mathcal C$ such that $M_{\alpha_1}$ and $M_{\alpha_2}$ are isomorphic. </p>
+
+<p>In the other direction now, suppose that for every sequence $\langle M_\alpha\mid\alpha\in{\rm ORD}\rangle$ of distinct structures in the same first-order language there are $\alpha<\beta$ such that $M_\alpha$ elementarily embeds into $M_\beta$. If Global Choice is one of your axioms, then Vopěnka's Principle is immediate. In the absence of Global Choice, such as in the setting where we only take definable classes, our principle might appear to be weaker than Vopěnka's Principle because there might be non-well-orderable classes of structures. But surprisingly this is not the case! So fix a proper class $\mathcal C$ of first-order structures in the same language. Let $\mathcal C_\alpha=\mathcal C\cap V_\alpha$. Now consider the proper class of all structures of the form $\langle V_{\alpha+2},\in, C_\alpha\rangle$ such that $C_\alpha$ has elements of unbounded rank in $V_\alpha$ and $\alpha$ is not inaccessible. This class is clearly well-orderable, so by our assumption there is an elementary embedding $j:V_{\alpha+2}\to V_{\beta+2}$ between two distinct elements of the class. Since $\alpha$ was assumed to not be inaccessible, the critical point $\kappa$ of $j$ is below $\alpha$. So let $M\in C_\alpha$ have rank $\gamma>\kappa$. It cannot be case that $j(\gamma)=\gamma$ since then $j$ would restrict to an embedding $j:V_{\gamma+2}\to V_{\gamma+2}$ violating Kunen's Inconsistency. So $j(\gamma)>\gamma$ and hence $j(M)\neq M$ is in $C_\beta$. Now restrict $j$ to $j:M\to j(M)$ and we have an elementary embedding between two distinct structures in $\mathcal C$. </p>
+
+<p>In first-order set theory, we can consider Vopěnka's Principle for definable classes. Let ${\rm VP}(\mathbf{\Sigma}_n)$ be the first-order assertion that Vopěnka's Principle holds for $\Sigma_n$-definable with parameters classes of structures, with ${\rm VP}(\mathbf{\Pi}_n)$ defined analogously. (One can also consider the light-face ${\rm VP}(\Sigma_n)$ principle, where parameters are not allowed in the definition of the class.) <em>First-order Vopěnka's Principle</em> is then the scheme of assertions ${\rm VP}(\mathbf{\Sigma}_n)$ for every $n\in\omega$. First-order Vopěnka's Principle is a weaker notion via implication, but not via consistency. </p>
+
+<p><strong>Theorem</strong>: (Hamkins) There are models of ${\rm GBC}$ in which first-order Vopěnka's Principle holds, but Vopěnka's Principle for all classes fails. However, the two principles are equiconsistent.</p>
+
+<p>The first result comes from a <a href="http://mathoverflow.net/questions/45602/can-vopenkas-principle-be-violated-definably" target="_blank">MathOverflow answer</a> and second from a work in progress <a href="#Hamkins:VopenkaPrinciple">[1]</a>.</p>
+
+<p>First-order Vopěnka's Principle doesn't just imply consistency of large cardinals, but holds precisely when proper classes of certain large cardinals are present in the universe. Recall that $\kappa$ is <em>extendible</em> if for every $\alpha>\kappa$, there is an elementary embedding $j:V_\alpha\to V_\beta$ with ${\rm crit}(j)=\kappa$. Let $C^{(n)}$ be the class club of $\delta$ such that $V_\delta\prec_{\Sigma_n}V$. Bagaria defined that a cardinal $\kappa$ is $C^{(n)}$-<em>extendible</em> if for every $\alpha>\kappa$, there is an extendibility embedding $j:V_\alpha\to V_\beta$ with $j(\kappa)\in C^{(n)}$. Notice that extendible cardinals are $C^{(1)}$-extendible because for any extendibility embedding $j$, $j(\kappa)$ is inaccessible and hence in $C^{(1)}$. It is not difficult to see that ${\rm VP}(\mathbf{\Sigma}_1)$ is a theorem of ${\rm ZFC}$.</p>
+
+<p><strong>Theorem</strong>: (Bagaria <a href="#Bagaria:CnCardinals">[2]</a>)
+<ul>
+	<li>
+${\rm VP}(\mathbf{\Sigma}_2)$ holds precisely when there is a proper class of supercompact cardinals. </li>
+<li> ${\rm VP}(\mathbf{\Sigma}_{n+1})$ for $n\geq 1$ holds precisely when there is a proper class of $C^{(n)}$-extendible cardinals. </li>
+</ul>
+In particular, it follows that first-order Vopěnka's Principle holds precisely when for every $n\in\omega$, there is a proper class of $C^{(n)}$-extendible cardinals.</p>
+
+<p>In this talk, I will introduce <em>Generic Vopěnka's Principle</em> which asserts that the embeddings posited by Vopěnka's Principle exist somewhere in the generic multiverse. More precisely, Generic Vopěnka's Principle asserts that for every proper class of structures in the same first-order language, there are two distinct ones between which there is an elementary embedding in some set-forcing extension. I will focus mainly on <em>first-order</em> Generic Vopěnka's Principle, which is the scheme of assertions ${\rm gVP}(\mathbf{\Sigma}_n)$ for $n\in\omega$, each of which asserts that Generic Vopenka's Principle holds for $\Sigma_n$-definable with parameters classes. Each assertion ${\rm gVP}(\mathbf{\Sigma}_n)$ is first-order expressible because we can quantify over the properties of all forcing extensions in $V$ using a theorem of Laver and Hamkins that ground models are definable <a href="#laver:groundmodel">[3]</a>. But we will see in the next paragraph that this is not even necessary because there are ways to express that an embedding of $V$-structures exists in a forcing extension without quantifying over all of them.</p>
+
+<p>Let's explore for a moment this notion of <em>virtual embeddings</em>, which exist somewhere in the generic multiverse. What are some examples of structures between which there is no elementary embedding in $V$, but such an embedding can be added by forcing? </p>
+
+<p><strong>Example 1</strong>: Obviously the reals cannot embed into the rationals in $V$, but any forcing which collapses the continuum to $\omega$ adds an isomorphism between the reals of $V$ and the rationals because in the forcing extension the reals of $V$ are a countable dense linear order without end-points.</p>
+
+<p><strong>Example 2</strong>: Suppose $0^{\sharp}$ exists and $\delta=\omega_1^V$. In $L$, there is no nontrivial elementary embedding from $L_{\delta}$ to itself, but the forcing collapsing $\delta$ to $\omega$ adds an elementary embedding $j:L_\delta\to L_\delta$. This is not obvious, but follows easily from the Absoluteness Lemma discussed <a href="/research/2014/05/07/an-absoluteness-lemma-for-countable-embeddings/" target="_blank">here</a>. </p>
+
+<p>Notice that both of our examples succeeded by collapsing the structure we wanted to embed to be countable. This is not a coincidence. </p>
+
+<p><strong>Theorem</strong>: Suppose $B$ and $A$ are two first-order structures in the same language. The following are equivalent.
+<ul style="margin-top: -20px;";>
+<li>
+There is an elementary embedding $j:B\to A$ in some set-forcing extension.</li>
+<li>There is an elementary embedding $j:B\to A$ in the ${\rm Coll}(\omega,B)$-extension.</li>
+</ul></p>
+
+<p>There is an another elegant characterization of when an embedding of $V$-structures exists in a forcing extension, due to Schindler, using Ehrenfeucht-Fraisse like games. Suppose $B$ and $A$ are first-order structures in the same language. Consider the following $\omega$-length game $G(B,A)$ where on every move player I plays an element out of $B$ and player II plays an element out of $A$. Let $\{b_n\mid n<\omega\}$ be the moves of player I and $\{a_n\mid n<\omega\}$ be the moves of player II. Player II wins if all maps $f:\{b_0,\ldots,b_n\}\to \{a_0,\ldots,a_n\}$ are finite partial isomorphisms, and otherwise player I wins. Clearly if player II loses she must do so in finitely many steps, and so $G(B,A)$ is a closed game. It follows by the Gale-Stewart Theorem that either player I or player II must have a winning strategy. </p>
+
+<p><strong>Theorem</strong>: Suppose $B$ and $A$ are two first-order structures in the same language. The following are equivalent.
+<ul>
+<li>There is an elementary embedding $j:B\to A$ in some set-forcing extension.</li>
+<li>Player II has a winning strategy in the game $G(B,A)$. </li>
+</ul></p>
+
+<p>The concept of elementary embeddings of $V$-structures existing in the generic multiverse leads naturally to a class of large cardinal notions, the <em>virtual</em> large cardinals, which are discussed <a href="/talks/2016/02/25/virtual-large-cardinals/" target="_blank">here</a>. If $\mathcal A$ is a large cardinal notion characterized by the existence of embeddings of set-sized structures, then a <em>virtual</em> $\mathcal A$ cardinal asserts that the embeddings characterizing $\mathcal A$ exist in some forcing extension. The strength of first-order generic Vopěnka's Principle is measured precisely by such cardinals. </p>
+
+<p>Recall that a cardinal $\kappa$ is <em>remarkable</em> if for every $\lambda>\kappa$, there exists $\bar\lambda<\kappa$ such that in some set-forcing extension, there is an elementary embedding $j:V_{\bar\lambda}\to V_\lambda$ with $j({\rm crit}(j))=\kappa$. Remarkable cardinals are <em>virtually supercompact</em>  because Magidor showed that supercompact cardinals are characterized by the existence of remarkable embeddings in $V$. Let's consider the following natural extension of remarkability.</p>
+
+<p><strong>Definition</strong> (<a href="#BagariaGitmanSchindler:VopenkaPrinciple">[4]</a>): A cardinal $\kappa$ is $n$-<em>remarkable</em> if for every $\lambda\in C^{(n)}$, there is $\bar\lambda$ also in $C^{(n)}$ such that in some set-forcing extension there is an elementary embedding $j:V_{\bar\lambda}\to V_\lambda$ with $j({\rm crit}(j))=\kappa$. </p>
+
+<p>Note that remarkable cardinals are $1$-remarkable. It turns out that $n$-remarkable cardinals for $n>1$ are precisely the <em>virtually $C^{(n)}$-extendible</em> cardinals.</p>
+
+<p><strong>Theorem</strong>: (<a href="#BagariaGitmanSchindler:VopenkaPrinciple">[4]</a>)
+A cardinal $\kappa$ is $n$-remarkable for $n>1$ iff $\kappa$ is virtually $C^{(n)}$-extendible. </p>
+
+<p>With these virtual analogues of the large cardinals used to measure the strength of first-order Vopěnka's Principle we can measure the strength of ${\rm gVP}(\mathbf{\Sigma}_n)$.</p>
+
+<p><strong>Theorem</strong>: ((<a href="#BagariaGitmanSchindler:VopenkaPrinciple">[4]</a>) The following are equiconsistent.
+<ul>
+<li>${\rm gVP}(\mathbf{\Sigma}_{n+1})$ holds.</li>
+<li>There is a proper class of $n$-remarkable cardinals.</li>
+</ul></p>
+<p>If there is a proper class of $n$-remarkable cardinals, then it is not difficult to see the ${\rm gVP}(\mathbf{\Sigma}_{n+1})$ holds. We do not know whether ${\rm gVP}(\mathbf{\Sigma}_{n+1})$ implies outright that there are $n$-remarkable cardinals. Bagaria's proof fails to generalize completely primarily because the virtual version of Kunen's Inconsistency is consistent! In a set-forcing extension there can be embeddings $j:V_\delta\to V_\delta$ where $\delta$ is much larger than the supremum $\lambda$ of the critical sequence, say $\delta=\lambda^+$. This is not difficult see by considering embedding of $V_\delta^L$ resulting from $0^{\sharp}$. So more precisely we have that:</p>
+
+<p><strong>Theorem</strong>: If ${\rm gVP}(\mathbf{\Sigma}_{n+1})$ holds then there is a proper class of cardinals $\kappa$ such that $\kappa$ is either $n$-remarkable or virtually rank-into-rank. </p>
+
+<p><em>Virtually rank-into-rank</em> cardinals are much stronger than $n$-remarkable cardinals. In particular, if $\kappa$ is virtually rank-into-rank, then $V_\kappa$ is a model of proper class many $n$-remarkable cardinals for every $n\in\omega$. So let me end with a question.</p>
+
+<p><strong>Question</strong>: Is it possible that there is a model of ${\rm gVP}(\mathbf{\Sigma}_{n+1})$ with boundedly many $n$-remarkable cardinals but unboundedly many virtually rank-into-rank cardinals?</p>
+
+<p>This is joint work with Joan Bagaria and Ralf Schindler.</p>
+
+<p>For slides go to <a href="/talks/2016/05/17/generic-vopenkas-principle-at-yst2016/" target="_blank">Young Set Theory talk</a> post and scroll down.</p>
+<h2>References</h2>
+<ol class="bibliography"><li><span id="Hamkins:VopenkaPrinciple">J. D. Hamkins, “The Vopěnka principle is inequivalent to but conservative over the Vopěnka scheme.” Available at: http://jdh.hamkins.org/vopenka-principle-vopenka-scheme</span></li>
+<li><span id="Bagaria:CnCardinals">J. Bagaria, “$C^{(n)}$-cardinals,” <i>Arch. Math. Logic</i>, vol. 51, no. 3-4, pp. 213–240, 2012. Available at: http://dx.doi.org.ezproxy.gc.cuny.edu/10.1007/s00153-011-0261-8</span></li>
+<li><span id="laver:groundmodel">R. Laver, “Certain very large cardinals are not created in small forcing
+              extensions,” <i>Ann. Pure Appl. Logic</i>, vol. 149, no. 1-3, pp. 1–6, 2007. Available at: http://dx.doi.org/10.1016/j.apal.2007.07.002</span></li>
+<li><span id="BagariaGitmanSchindler:VopenkaPrinciple">J. Bagaria, V. Gitman, and R. Schindler, “Generic Vopěnka’s Principle, remarkable cardinals, and the
+              weak Proper Forcing Axiom,” <i>Arch. Math. Logic</i>, vol. 56, no. 1-2, pp. 1–20, 2017. Available at: http://dx.doi.org/10.1007/s00153-016-0511-x</span></li></ol>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>

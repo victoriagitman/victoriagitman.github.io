@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Computable processes can produce arbitrary outputs in nonstandard models | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="Computable processes can produce arbitrary outputs in nonstandard models" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a talk at the CUNY MOPA Seminar in New York, April 13, 2016." />
+<meta property="og:description" content="This is a talk at the CUNY MOPA Seminar in New York, April 13, 2016." />
+<link rel="canonical" href="http://localhost:4000/talks/2016/03/29/computable-processes-can-produce-arbitrary-outputs.html" />
+<meta property="og:url" content="http://localhost:4000/talks/2016/03/29/computable-processes-can-produce-arbitrary-outputs.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-03-29T00:00:00-04:00" />
+<script type="application/ld+json">
+{"description":"This is a talk at the CUNY MOPA Seminar in New York, April 13, 2016.","@type":"BlogPosting","url":"http://localhost:4000/talks/2016/03/29/computable-processes-can-produce-arbitrary-outputs.html","headline":"Computable processes can produce arbitrary outputs in nonstandard models","dateModified":"2016-03-29T00:00:00-04:00","datePublished":"2016-03-29T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/talks/2016/03/29/computable-processes-can-produce-arbitrary-outputs.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/header.JPG" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>Computable processes can produce arbitrary outputs in nonstandard models</h1>
+
+	
+      <p>This is a talk at the <a href="http://nylogic.org/mopa" target="_blank">CUNY MOPA Seminar</a> in New York, April 13, 2016.<!--more--></p>
+<img src="/images/multiverse.jpg" style="float:left; padding: 10px;"/>
+
+
+Logicians often start out by working in a model of some fundamental mathematical theory, and then pass to a larger extension model of the same underlying theory, which possesses certain desired new properties. This is particularly true for set theorists who are always moving from a model of ${\rm ZFC}$ to one of its forcing extensions, a larger  and structurally very different model of ${\rm ZFC}$. In the field of models of arithmetic, it is also a common practice to pass from a model of ${\rm PA}$ to an extension model, also of ${\rm PA}$, that maybe realizes or omits some desired types.
+
+<p>From a philosophical standpoint, we can view this transition as passing from a universe governed by certain fundamental physical laws to a larger universe obeying the same laws. Since the new universe still obeys the same fundamental laws (such as ${\rm PA}$ or ${\rm ZFC}$), any observer from the old universe should remain ignorant of the transition. This is precisely how, over beers, a logician will try to convince you that you can be living in a nonstandard model of arithmetic. In arithmetic, there is a particularly useful way of extending a model called an end-extension. An <em>end-extension</em> $N$ of a model $M$ adds new numbers only on top of all the old numbers of $M$.  Let's imagine the process of moving from $M$ to $N$ as ``extending time". Thus, when we move from say the natural numbers $\mathbb N$ to a nonstandard model, we should think of this passage as the act of extending time into the nonstandard realm. These philosophical interpretations  are outlined by Woodin in <a href="#Woodin:PotentialSubtletyDeterminismNonDeterminism">[1]</a>. </p>
+
+<p>In this talk, I want to focus on the question of what happens to a deterministic process obeying the fundamental laws of our universe if we keep the laws but extend the time by passing to a nonstandard universe. An observer watching the evolution of the process would see it obeying the same fundamental laws, but would the outcome of the process change? Mathematically, this translates into asking how drastically can the output of a computable process change by, say, passing from $\mathbb N$ to a nonstandard model.</p>
+
+<p>It should not be at all surprising that there would be a change. Since a nonstandard model has many new objects, there is a good chance that a computable process doesn't output anything in the standard model because it never finds the object it is looking for, but it will find the object and output an affirmative answer in some nonstandard model. More concretely, suppose we ask a program to search for a proof of $\ulcorner 0=1\urcorner$ from the axioms of ${\rm PA}$ and to output 1 if it ever succeeds. In $\mathbb N$, the program will never output anything because (hopefully) no such proof exists. But now let's pass to a nonstandard model $M$ satisfying ${\rm PA}+\neg{\rm Con}({\rm PA})$, which exists because this theory is consistent by the Second Incompleteness Theorem. The same computable process now running in $M$ will output $1$.</p>
+
+<p>In a <a href="http://jdh.hamkins.org/every-function-can-be-computable/" target="_blank">recent post</a>, Joel Hamkins proved a remarkable generalization of this phenomena showing that there is a single computer program $p$ such that for every function $f:\mathbb N\to\mathbb N$, no matter how complex or random, there is some nonstandard model $M\models{\rm PA}$ in which $p$ computes $f$ on the standard part. Woodin calls this "coding information into time". He has shown that possibly the most drastic realization of this phenomena holds, namely that there is a computer program $p$, which produces no output in $\mathbb N$, but given any finite set of natural numbers, can output precisely this set in some nonstandard model. His result is even more general than that.</p>
+
+<p><strong>Theorem</strong> (Woodin, <a href="#Woodin:PotentialSubtletyDeterminismNonDeterminism">[1]</a>): For every computably enumerable theory $T$ extending ${\rm PA}$, there is an index $e$ (depending on $T$) such that 
+<ul>
+	<li> ${\rm PA}\vdash "W_e$ is finite",</li>
+
+	<li>If $M$ is a countable model of $T$ and $M\models W_e\subseteq s$ for some $M$-finite set $s$, then $M$ has an end-extension $N$ that satisfies $T+W_e=s$. </li>
+</ul>
+</p>
+
+<p>
+Blanck and Enayat recently extended Woodin's result to remove the countability assumption on $M$ <a href="#BlanckEnayat:WoodinTheorem">[2]</a>. (They also generalized it to theories $T\supseteq {\rm I}\Sigma_1$, but this is too technical for the purposes of this talk.) So that the result now truly holds across the multiverse of models of, say, $T={\rm PA}$. Starting in any model of ${\rm PA}$ which satisfies that $W_e$ could potentially be $s$, $M$ has an end-extension satisfying ${\rm PA}$ in which this is realized. </p>
+
+<p>The program $p$ Woodin constructs can be easily modified  to a program which computes a function that on input $0$ either has no output or outputs a number $n$. In the case, where $p$ has no output on input $0$, we can pass an end-extension in which any desired finite binary sequence is the output on input 0. In the case, where $p$ outputs $n$ on input 0, for any finite binary sequence, there is some end-extension, in which it must be the output of $p$ on some input bounded by $N$. So as Woodin points out the input space for the program is much simpler than the output space, granted we are considering the output space across the multiverse obeying the same fundamental laws, effectively blurring the distinction between determinism and nondeterminism.</p>
+
+<p>In the <a href="/research/2016/03/29/computable-processes-can-produce-arbitrary-outputs-continued/" target="_blank">next post</a>, I will give a brief sketch of Blanck and Enayat's argument, generalizing the argument given by Woodin.</p>
+
+<h2>References</h2>
+<ol class="bibliography"><li><span id="Woodin:PotentialSubtletyDeterminismNonDeterminism">W. H. Woodin, “A potential subtlety concerning the distinction between
+              determinism and nondeterminism,” in <i>Infinity</i>, Cambridge Univ. Press, Cambridge, 2011, pp. 119–129. </span></li>
+<li><span id="BlanckEnayat:WoodinTheorem">R. Blanck and A. Enayat, “Marginalia on a theorem of Woodin,” 2016. </span></li></ol>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
