@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Models of $\rm{ZFC}^-$ that are not definable in their set forcing extensions | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="Models of $\rm{ZFC}^-$ that are not definable in their set forcing extensions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a talk at the CUNY Set Theory Seminar, May 4, 2012." />
+<meta property="og:description" content="This is a talk at the CUNY Set Theory Seminar, May 4, 2012." />
+<link rel="canonical" href="http://localhost:4000/talks/2012/04/18/models-of-zfc-that-are-not-definable-their-set-forcing-extensions.html" />
+<meta property="og:url" content="http://localhost:4000/talks/2012/04/18/models-of-zfc-that-are-not-definable-their-set-forcing-extensions.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2012-04-18T00:00:00-04:00" />
+<script type="application/ld+json">
+{"description":"This is a talk at the CUNY Set Theory Seminar, May 4, 2012.","@type":"BlogPosting","url":"http://localhost:4000/talks/2012/04/18/models-of-zfc-that-are-not-definable-their-set-forcing-extensions.html","headline":"Models of $\\rm{ZFC}^-$ that are not definable in their set forcing extensions","dateModified":"2012-04-18T00:00:00-04:00","datePublished":"2012-04-18T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/talks/2012/04/18/models-of-zfc-that-are-not-definable-their-set-forcing-extensions.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/header.JPG" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>Models of $\rm{ZFC}^-$ that are not definable in their set forcing extensions</h1>
+
+	
+      <p>This is a talk at the <a href="http://nylogic.org/set-theory" target="_blank">CUNY Set Theory Seminar</a>, May 4, 2012.<!--more--></p>
+
+<p>It took four decades since the invention of forcing for set theorists and to ask (and answer) what post factum seems as one of the most natural questions regarding forcing. Is the ground model a definable class of its set forcing extensions? Using techniques developed by Hamkins, Laver provided a positive answer in <a href="#laver:groundmodel">[1]</a>. The result is also due independently to Woodin from about the same time <a href="#woodin:groundmodel">[2]</a>.</p>
+
+<p><strong>Theorem</strong>: (Laver, Woodin, Hamkins)
+Suppose $V$ is a model of ${\rm ZFC}$, $\mathbb P\in V$ is a forcing notion, and $G\subseteq\mathbb P$ is $V$-generic. Then in $V[G]$, the ground model $V$ is uniformly definable from the parameter $\mathcal P(|\mathbb P|)^V$.</p>
+
+<p>Not only is the ground model always a definable class of its set forcing extensions, but the uniform definition uses a ground model parameter.  This is a good time to point out that the requirement that $\mathbb P$ is a set forcing is a necessary one, since the ground model need not be definable in a class forcing extension. Here is a counterexample hint. Let $\mathbb P$ be the class length Easton support product adding a Cohen subset to every regular cardinal. Note that $\mathbb P$ is isomorphic to $\mathbb P\times \mathbb P$ since adding two Cohen reals is the same as adding one. For the full argument, due to Sy Friedman, see this <a href="http://mathoverflow.net/questions/83203/definability-of-ground-model">MathOverflow question</a>.</p>
+
+<p>Since, in many contexts, set theorists force over models of ${\rm ZFC}^{-}$, the theory ${\rm ZFC}$ without the powerset axiom, it is also natural to wonder whether in this case the ground model is definable in its set forcing extensions.</p>
+
+<p>Strange things have been known to happen before once the powerset axiom is removed. It has been a project of Zarach for many years now to convince the readers of his papers that ${\rm ZFC}^{-}$ behaves unexpectedly and unintuitively. Zarach showed that without the powerset axiom, the replacement and collection schemes are not equivalent <a href="#Zarach1996:ReplacmentDoesNotImplyCollection">[3]</a>, and Hamkins, Johnstone and myself showed that collection is necessary for many of the constructions that set theorists take for granted, particularly in the context of large cardinals, as for example, the  &#321;&#243;s ultrapower construction <a href="#zfcminus:gitmanhamkinsjohnstone">[4]</a>. Thus, we must to be careful to specify that ${\rm ZFC}^{-}$ includes collection in place of the replacement scheme. Another unintuitive consequence, pointed out by Zarach (proved by his colleague Szczpaniak), is that without the powerset axiom, the axiom of choice does not imply the well-ordering principle <a href="#zarach:unions_of_zfminus_models">[5]</a>. And so Thomas Johnstone advocates that when defining ${\rm ZFC}^-$, we adopt the convention that ${\rm C}$ stands for the well-ordering principle. Most natural examples of ${\rm ZFC}^{-}$ models arise as elementary substructures of $H_{\kappa^+}$, the set of all sets of hereditary size $\leq\kappa$, for some cardinal $\kappa$. These are clearly models of both the collection scheme and the well-ordering principle.</p>
+
+<p>It turns out that a ${\rm ZFC}^{-}$ ground model need not be definable in a set forcing extension. Indeed, using different preparatory forcing, one can create numerous such counterexamples of the form $H_{\kappa^+}$. The downside of the counterexample models is that the powerset of the forcing notion in whose extension they are not definable is a proper class in the model, making the situation much too similar to class forcing to be truly satisfying. These models do have the interesting feature, as observed by Joel Hamkins, of also serving as counterexamples to the standard ${\rm ZFC}$ fact that the ground model can never be elementary in its set forcing extension. This should not be overly surprising since the non-elementarity in the ${\rm ZFC}$ case is established using the powerset of the forcing notion as a parameter.</p>
+ 
+So, is there a ${\rm ZFC}^{-}$ model that is not definable in an extension by a forcing notion whose powerset is an element of the model? I asked this question to David Asper&#243; recently and he produced a counterexample, using, of all things, an $I_0$-cardinal, a large cardinal that sits pretty much atop the large cardinal hierarchy. An $I_0$-embedding is an elementary embedding $j:L(V_{\lambda+1})\to L(V_{\lambda+1})$ with critical point $\kappa&lt;\lambda$ and $\kappa$ is an $I_0$-cardinal. The existence of $I_0$-cardinals pushes right up against the Kunen Inconsistency, the existence of an elementary embedding $j:V\to V$. Incidentally, anyone interested to learn about $I_0$-cardinals should read Vincenzo Dimonte's excellent <a href="http://www.logic.univie.ac.at/~dimonte/notes.htm">notes</a>. Do we really need large cardinals, especially ones this large, to produce the such a counterexample? One should hope not, but absolutely nothing is known about it!
+
+
+<h2>References</h2>
+<ol class="bibliography"><li><span id="laver:groundmodel">R. Laver, “Certain very large cardinals are not created in small forcing
+              extensions,” <i>Ann. Pure Appl. Logic</i>, vol. 149, no. 1-3, pp. 1–6, 2007. Available at: http://dx.doi.org/10.1016/j.apal.2007.07.002</span></li>
+<li><span id="woodin:groundmodel">H. Woodin, “Recent developments on Cantor’s Continuum Hypothesis,” in <i>Proceedings of the continuum in Philosophy and Mathematics</i>, 2004. </span></li>
+<li><span id="Zarach1996:ReplacmentDoesNotImplyCollection">A. M. Zarach, “Replacement $\nrightarrow$ collection,” in <i>Gödel ’96 (Brno, 1996)</i>, vol. 6, Berlin: Springer, 1996, pp. 307–322. </span></li>
+<li><span id="zfcminus:gitmanhamkinsjohnstone">V. Gitman, J. D. Hamkins, and T. A. Johnstone, “What is the theory $\mathsf {ZFC}$ without power set?,” <i>MLQ Math. Log. Q.</i>, vol. 62, no. 4-5, pp. 391–406, 2016. Available at: http://dx.doi.org/10.1002/malq.201500019</span></li>
+<li><span id="zarach:unions_of_zfminus_models">A. Zarach, “Unions of ${\rm ZF}^{-}$-models which are themselves
+              ${\rm ZF}^{-}$-models,” in <i>Logic Colloquium ’80 (Prague, 1980)</i>, vol. 108, Amsterdam: North-Holland, 1982, pp. 315–342. </span></li></ol>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
