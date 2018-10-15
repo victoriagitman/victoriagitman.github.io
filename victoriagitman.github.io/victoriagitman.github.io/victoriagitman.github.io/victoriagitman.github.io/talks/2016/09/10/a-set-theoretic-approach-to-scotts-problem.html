@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>A set-theoretic approach to Scott’s Problem | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="A set-theoretic approach to Scott’s Problem" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a talk at the National University of Singapore Logic Seminar, October 19, 2016." />
+<meta property="og:description" content="This is a talk at the National University of Singapore Logic Seminar, October 19, 2016." />
+<link rel="canonical" href="/talks/2016/09/10/a-set-theoretic-approach-to-scotts-problem.html" />
+<meta property="og:url" content="/talks/2016/09/10/a-set-theoretic-approach-to-scotts-problem.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-09-10T00:00:00-04:00" />
+<script type="application/ld+json">
+{"description":"This is a talk at the National University of Singapore Logic Seminar, October 19, 2016.","@type":"BlogPosting","url":"/talks/2016/09/10/a-set-theoretic-approach-to-scotts-problem.html","headline":"A set-theoretic approach to Scott’s Problem","dateModified":"2016-09-10T00:00:00-04:00","datePublished":"2016-09-10T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"/talks/2016/09/10/a-set-theoretic-approach-to-scotts-problem.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/header.JPG" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>A set-theoretic approach to Scott's Problem</h1>
+
+	
+      <p>This is a talk at the National University of Singapore <a href="https://www.comp.nus.edu.sg/~fstephan/logicseminar.html" target="_blank">Logic Seminar</a>, October 19, 2016.<!--more--></p>
+
+<img src="/images/nus.jpg" style="float:left; padding: 10px;" />
+
+<p>Every nonstandard model of Peano Arithmetic (${\rm PA}$) has a Boolean algebra of subsets of the natural numbers associated to it, called its standard system. The <em>standard system</em> of a model $M\models{\rm PA}$, denoted ${\rm SSy}(M)$, consists of the intersections of the definable subsets of $M$ with the natural numbers. Standard systems play a very important role in the study of nonstandard models of arithmetic. For instance, they are used to determine when models are isomorphic and when models elementarily embed. Two countable computably saturated models of ${\rm PA}$ are isomorphic precisely when they have the same theory and the same standard system (this folklore result has been variously attributed to Ehrenfeucht and Jensen, Wilmers, etc.). A countable model $M\models{\rm PA}$ $\Sigma_n$-elementarily embeds into another model $N\models{\rm PA}$ precisely when $N$ satisfies the $\Sigma_{n+1}$-theory of $M$ and ${\rm SSy}(M)\subseteq{\rm SSy}(N)$ (this is a variant of the famous Friedman's Embedding Theorem showing that every model of ${\rm PA}$ has an isomorphic elementary initial segment).</p>
+
+<p>Standard systems are Boolean algebras because the definable sets of any model form a Boolean algebra. Standard systems are closed under relative computability: if $A$ is in a standard system and $B$ is Turing computable with oracle $A$, then $B$ is also in that standard system. Let's see why this is true. Suppose $M\models{\rm PA}$, $A\in {\rm SSy}(M)$, and $B$ is computed by a Turing machine $m$ with oracle $A$. Let $\bar A$ be a definable subset of $M$ such that $A=\bar A\cap \mathbb N$ and let $\bar B$ be the set computed in $M$ by the Turing machine $m$ with oracle $\bar A$. Since $M$ must see that $m$ computes $B$ on the natural numbers, it follows that $\bar B\cap \mathbb N=B$. Standard systems also have the <em>tree property</em>: if $T$ is an infinite binary tree coded by a set in a standard system (use your favorite coding), then there is another set in that standard system coding an infinite branch through $T$. Let's see why this is true. Suppose that $M\models{\rm PA}$ and $T\in {\rm SSy}(M)$ codes an infinite binary tree. Let $\bar T$ be a definable subset of $M$ such that $T=\bar T\cap\mathbb N$. Since for every natural number $n$, there is an element in $\bar T$ coding a binary sequence of length $n$ such that all its predecessors are also coded in $\bar T$, this must hold for some nonstandard $c$ as well. So $\bar T$ has some nonstandard binary sequence $s$ of length $c$ as well as all its binary predecessors. Let $\bar B$ the definable set of all binary predecessors of $s$ in $\bar T$. Then $B=\bar B\cap \mathbb N$, the collection of all binary predecessors of $s$ of finite length, is an infinite branch through $T$. </p>
+
+<p>A decade before the notion of a standard system was introduced by Harvey Friedman in 1973 <a href="#friedman:countableModelsOfSetTheory">[1]</a>, Dana Scott defined that a <em>Scott set</em> is a nonempty Boolean algebra of subsets of the natural numbers that is closed under relative computability and has the tree property <a href="#scott:ScottSets">[2]</a>. We just argued that every standard system is a Scott set. Scott's arguments translated into modern terms show a partial converse: every <em>countable</em> Scott set is the standard system of some model of ${\rm PA}$. What about uncountable Scott sets? This is <em>Scott's Problem</em>, one of the most famous and long-standing open problems in the field. Is every Scott set the standard system of some model of ${\rm PA}$? In 1982, Knight and Nadel showed that every Scott set of size $\omega_1$ is the standard system of a some model of ${\rm PA}$ <a href="#KnightNadel:ScottSets">[3]</a>. Thus, it is consistent, namely, by assuming ${\rm CH}$, that Scott's Problem has a positive answer. What happens if $2^\omega=\omega_2$ or if continuum is very large? No one knows the answer! Most well-developed techniques in the field of models of ${\rm PA}$ break down for uncountable models. Elegant theorems for countable models are either known to be false or are open problems for uncountable models. Here are two examples. It is easy to see that every nonstandard model of ${\rm PA}$ has order-type $\mathbb N+\mathbb A\cdot \mathbb Z$ for a dense linear order $\mathbb A$ without endpoints. For countable models, obviously, $\mathbb A=\mathbb Q$, but very little is known about the possible order-types of uncountable models (see <a href="#BovykinKaye:orderTypesModelsPA">[4]</a>). The classification theorem for countable computably saturated models is known to fail for uncountable models (there are counterexample $\omega_1$-like models, see <a href="#kossakschmerl:modelsofpa">[5]</a> Chapter 10).</p>
+
+<p>So what are the promising strategies for making progress on Scott's Problem? Knight and Nadel's result can be proved using an unpublished theorem of Ehrenfeucht, which we will call Ehrenfeucht's Lemma. Ehrenfeucht's Lemma states that if $\mathscr X$ is a Scott set and $M$ is a countable model of ${\rm PA}$ such that ${\rm SSy}(M)\subseteq \mathscr X$, then for every $A\in \mathscr X$, $M$ has an elementary extension $N$ such that $A\in {\rm SSy}(N)\subseteq \mathscr X$. Knight and Nadel's result follows nearly immediately by a transfinite application of Ehrenfeucht's Lemma. Let $\mathscr X=\{A_\xi\mid \xi<\omega_1\}$ be a Scott set. We build the model $M$ with standard system $\mathscr X$ in $\omega_1$-many steps as the union of a continuous elementary chain of models $M_0\prec M_1\prec\cdots\prec M_\xi\prec\cdots\prec M$ such that $A_\xi\in {\rm SSy}(M_\xi)\subseteq \mathscr X$. Does Ehrenfeucht's Lemma hold for uncountable models $M$? Nothing is known here either. So nearly a decade ago in my dissertation, I tried to find some strong requirements on a Scott set $\mathscr X$ of size $\omega_2$ such that Ehrenfeucht's Lemma would hold for it with models of size $\omega_1$. By the elementary chain of models argument, each such Scott set would be the standard system of some model of ${\rm PA}$.</p>
+<p> 
+Let's say that a collection $\mathscr X$ of subsets of $\mathbb N$ is <em>arithmetically closed</em> if it is a Boolean algebra closed under the Turing jump operation. Scott sets are precisely the $\omega$-models of the second-order arithmetic theory ${\rm WKL}_0$ and arithmetically closed families are precisely the $\omega$-models of the theory ${\rm ACA}_0$. Given $M\models{\rm PA}$ and a Scott set $\mathscr X$ such that ${\rm SSy}(M)\subseteq \mathscr X$, there is an ultrapower construction introduced by Kirby and Paris which uses an ultrafilter on $\mathscr X$ and functions $f:\mathbb N\to M$ that are the restrictions of definable functions $F:M\to M$. It turns out that the ultrapower $N$ can be made to satisfy the requirements of Ehrenfeucht's Lemma  (given $A\in\mathscr X$, we have $A\in {\rm SSy}(N)\subseteq \mathscr X$) by including sets satisfying certain properties in the ultrafilter. If the family $\mathscr X$ is arithmetically closed, the desired ultrafilter can be obtained from a generic filter for the partial order $\mathscr X/{\rm fin}$ whose elements are infinite sets in $\mathscr X$ ordered by almost inclusion: $A\subseteq_* B$ if there is $n\in\mathbb N$ such that $A\setminus n\subseteq B$. Indeed, for a model $M$ of size $\omega_1$, the filter $G$ has to meet only $\omega_1$-many dense sets. So if for instance $\mathscr X/{\rm fin}$ is proper and we are in a model with ${\rm PFA}$ (Proper Forcing Axiom) we would have the required filter right there. All this gives that in a model of ${\rm PFA}$ if $\mathscr X$ is an arithmetically closed family such that $\mathscr X/{\rm fin}$ is proper, then Ehrenfeucht's Lemma holds for models of size $\omega_1$ with standard system contained in $\mathscr X$. It suffices to assume that $\mathscr X/{\rm fin}$ is only <em>piecewise proper</em>: $\mathscr X$ is a chain of arithmetically closed families $\mathscr Y$ of size $\omega_1$ such that $\mathscr Y/{\rm fin}$ is proper <a href="#gitman:scott">[6]</a>.</p>
+
+<p>Enayat and Shelah showed that there is a Borel arithmetically closed family $\mathscr X$ such that $\mathscr X/\text{fin}$ is not proper <a href="#EnayatShelahImproperFamily">[7]</a>. I showed that it is consistent to have continuum many arithmetically closed families $\mathscr X$ of size $\omega_1$ such that $\mathscr X/\text{fin}$ is proper and continuum many arithmetically closed families $\mathscr X$  of size $\omega_2$ such that $\mathscr X/{\rm fin}$ is piecewise proper by adding these families by forcing <a href="#gitman:proper">[8]</a>. But to this day I cannot show that there are proper or piecewise Scott sets of size $\omega_2$ in a model of ${\rm PFA}$. A few years ago when I asked a related <a href="http://mathoverflow.net/questions/141543/a-well-behaved-a-that-is-almost-contained-in-every-element-of-some-filter-for" target="_blank">question</a> on MathOverflow, <a href="http://logic.dorais.org/" target="_blank">François Dorais</a>, in response, came up with a completely different way of associating a partial order to an arithmetically closed family $\mathscr X$ such that the generic filter for the forcing also yields a desired ultrafilter on $\mathscr X$. Conditions in Dorais' forcing are lower semicontinuous submeasures coded in $\mathscr X$. A <em>submeasure</em> is a function $\mu:P(\mathbb N)\to [0,\infty]$ such that $\mu(\emptyset)=0$ and $\mu(X)\leq \mu(X\cup Y)\leq \mu(X)+\mu(Y)$. A submeasure is <em>lower semicontinuous</em> if $\mu(X)=\lim_{n\to\infty}\mu(X\cap n)$. So lower semicontinous measures are determined by their values on finite sets and therefore can be coded in a Scott set. Given a Scott set $\mathscr X$, let $\mathbb P_{\mathscr X}$ be the partial order whose elements are lower semicontinuous measures coded in $\mathscr X$ ordered by $\leq_*$, where $\mu\leq_*\nu$ whenever there is $n\in\mathbb N$ such that $\mu(X)\leq \text{max}(\mu(X),n)$. Using a deep result of Dorais from <a href="#dorais:MathiasForcing">[9]</a>, we can show that, under ${\rm CH}$, there are $\omega_1$-many arithmetically closed families $\mathscr X$ of size $\omega_1$ such that $\mathbb P_\mathscr X$ is proper. But alas the construction breaks at $\omega_1$.</p>
+
+<p>This leaves many fascinating open questions that we should all start thinking about! </p>
+
+<p>Here are the <a href="/files/singaporeTalk.pdf" target="_blank">slides</a>.</p>
+
+<h2>References</h2>
+<ol class="bibliography"><li><span id="friedman:countableModelsOfSetTheory">H. Friedman, “Countable models of set theories,” in <i>Cambridge Summer School in Mathematical Logic
+              (Cambridge, 1971)</i>, Berlin: Springer, 1973, pp. 539–573. Lecture Notes in Math., Vol. 337. </span></li>
+<li><span id="scott:ScottSets">D. Scott, “Algebras of sets binumerable in complete extensions of
+              arithmetic,” in <i>Proc. Sympos. Pure Math., Vol. V</i>, American Mathematical Society, Providence, R.I., 1962, pp. 117–121. </span></li>
+<li><span id="KnightNadel:ScottSets">J. Knight and M. Nadel, “Models of arithmetic and closed ideals,” <i>J. Symbolic Logic</i>, vol. 47, no. 4, pp. 833–840 (1983), 1982. Available at: http://dx.doi.org/10.2307/2273102</span></li>
+<li><span id="BovykinKaye:orderTypesModelsPA">A. Bovykin and R. Kaye, “Order-types of models of Peano arithmetic,” in <i>Logic and algebra</i>, vol. 302, Amer. Math. Soc., Providence, RI, 2002, pp. 275–285. Available at: http://dx.doi.org/10.1090/conm/302/05055</span></li>
+<li><span id="kossakschmerl:modelsofpa">R. Kossak and J. H. Schmerl, <i>The structure of models of Peano arithmetic</i>, vol. 50. The Clarendon Press, Oxford University Press, Oxford, 2006, p. xiv+311. Available at: http://dx.doi.org.ezproxy.gc.cuny.edu/10.1093/acprof:oso/9780198568278.001.0001</span></li>
+<li><span id="gitman:scott">V. Gitman, “Scott’s problem for proper Scott sets,” <i>J. Symbolic Logic</i>, vol. 73, no. 3, pp. 845–860, 2008. Available at: https://doi.org/10.2178/jsl/1230396751</span></li>
+<li><span id="EnayatShelahImproperFamily">A. Enayat and S. Shelah, “An improper arithmetically closed Borel subalgebra of $\scr
+              P(ω)\bmod\mathsf{FIN}$,” <i>Topology Appl.</i>, vol. 158, no. 18, pp. 2495–2502, 2011. Available at: http://dx.doi.org/10.1016/j.topol.2011.08.006</span></li>
+<li><span id="gitman:proper">V. Gitman, “Proper and Piecewise Proper Families of Reals,” <i>Mathematical Logic Quarterly</i>, vol. 55, no. 5, pp. 542–550, 2009. Available at: http://dx.doi.org/10.1002/malq.200810015</span></li>
+<li><span id="dorais:MathiasForcing">F. G. Dorais, “A variant of Mathias forcing that preserves $\mathsf{ACA}_0$,” <i>Arch. Math. Logic</i>, vol. 51, no. 7-8, pp. 751–780, 2012. Available at: http://dx.doi.org/10.1007/s00153-012-0297-4</span></li></ol>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
