@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>A Jonsson $\omega_1$-like model of set theory | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="A Jonsson $\omega_1$-like model of set theory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a talk at the CUNY Set Theory Seminar, November 15, 2013." />
+<meta property="og:description" content="This is a talk at the CUNY Set Theory Seminar, November 15, 2013." />
+<link rel="canonical" href="/talks/2013/11/13/a-jonsson-omega_1-like-model-of-set-theory.html" />
+<meta property="og:url" content="/talks/2013/11/13/a-jonsson-omega_1-like-model-of-set-theory.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-11-13T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"This is a talk at the CUNY Set Theory Seminar, November 15, 2013.","@type":"BlogPosting","url":"/talks/2013/11/13/a-jonsson-omega_1-like-model-of-set-theory.html","headline":"A Jonsson $\\omega_1$-like model of set theory","dateModified":"2013-11-13T00:00:00-05:00","datePublished":"2013-11-13T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"/talks/2013/11/13/a-jonsson-omega_1-like-model-of-set-theory.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/header.JPG" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>A Jonsson $\omega_1$-like model of set theory</h1>
+
+	
+      <p>This is a talk at the <a href="http://nylogic.org/set-theory" target="_blank">CUNY Set Theory Seminar</a>, November 15, 2013.<!--more--></p>
+
+<p>In 1962, Bjarni Jónsson asked whether there is a cardinal $\kappa$ such that every first-order structure (in a countable language) of size $\kappa$ has an elementary substructure of size $\kappa$. In his honor, a first-order structure is called <em>Jónsson</em> if it has no proper elementary substructures of its cardinality, and a cardinal $\kappa$ is called  <em>Jónsson</em> if there are no Jónsson structures of size $\kappa$. It turns out that Jónsson cardinals are large! For instance, if there is a Jónsson cardinal, then $0^\sharp$ exists. It is known that $\omega_1$ cannot Jónsson, meaning that there are Jónsson first-order structures of size $\omega_1$. In this talk, I will prove a theorem of Julia Knight that there is a Jónsson $\omega_1$-like model of set theory <a href="#knight:hanfnumbers">[1]</a>. </p>
+
+A model of set theory is $\omega_1$-<em>like</em> if it has size $\omega_1$, but all its rank initial segments are countable (read more <a href="/talks/2013/10/01/embeddings-among-omega_1-like-models-of-set-theory/" target="_blank">here</a>). An $\omega_1$-like model with some desired property $P$ is usually built up as the union of an elementary chain of length $\omega_1$ of countable models, where the successor stage elementary extensions only add elements on top and have some additional structure which at the end allows us to verify $P$. If there is a countable model of set theory, then there is an $\omega_1$-like model of set theory because every countable model has a <em>top</em> elementary extension. 
+
+<p>Keisler and Morley <a href="#keislermorley:topextensions">[2]</a> proved that every countable model has a top extension using an omitting types argument. Suppose that $M\models{\rm ZFC}$ is countable. Extend the language of set theory by adding constants $c$ for all elements of $M$ and an additional constant $e$. Let $T_M$ be the theory ${\rm Th}(M,c)_{c\in M}$ together with the sentence "$e$ is an ordinal" and the collection of sentences $\{e>\alpha\mid\alpha\in{\rm ORD}^M\}$. For every $c\in M$, we define the corresponding type $p_c(x)$ consisting of the formula $x\in^M c$ and the formulas $\{x\neq b\mid b\in^M c\}$. Using the Omitting Types Theorem, it is not difficult to see that $T_M$ has a model omitting all types $p_c(x)$ and this is our desired top extension.</p>
+
+<p>Another folklore proof uses a variation on the Skolem ultrapower construction. Skolem ultrapowers were introduced by Skolem who used them to show that there is a countable nonstandard model of the Peano Axioms. The ultrapower is built out of definable functions $F:{\rm ORD}^M\to M$ and an ultrafilter on the definable classes of ordinals of $M$. If $M$ has a definable global well-order, the ultrapower satisfies the Łoś Theorem. If it doesn't, we can use forcing (see <a href="/research/2013/10/09/forcing-to-add-proper-classes-to-a-model-of-rm-gbc-an-introduction/" target="_blank">here</a>) to extend it to a model of ${\rm GBC}$ (Gödel-Bernays set theory) and build the ultrapower out of this larger collection of classes. By choosing an ultrafilter with the property that every class function $F:M\to V_\alpha^M$ is constant on some set in it, we ensure that the ultrapower is a top extension. </p>
+
+<p>Julia Knight's construction of a Jónsson $\omega_1$-like model hinges on the following observation. Let $p(x,y)$ be the type expressing that $x$ and $y$ are not definable from each other. It is easy to see that any model of size $\omega_1$ which omits $p(x,y)$ must be Jónsson. Knight shows that that if $M$ itself omits $p(x,y)$, then the theory $T_M$  has a model which omits $p(x,y)$. Since we can omit countably many types at once, we can omit all $p_c(x)$ together with $p(x,y)$ to obtain a top extension.</p>
+
+<p>Ali Enayat's <a href="#enayat:jonsson">[3]</a> construction of a Jónsson $\omega_1$-like model uses superminimal extensions obtained via Skolem ultrapowers. Suppose that $M\models{\rm ZFC}+V={\rm OD}$ (every element is ordinal definable). An elementary extension $N$ of $M$ is called <em>superminimal</em> if for every $a\in N\setminus M$, we have $N={\rm Scl}(a)$, the Skolem hull of $\{a\}$. It is easy to see that if $M$ is an elementary chain of length $\omega_1$ of countable models, where the successor stage extensions are superminimal, then it is Jónsson. Enayat shows that every countable model $M\models{\rm ZFC}+V={\rm OD}$ has a Skolem ultrapower that is a superminimal top extension by carefully choosing the ultrafilter. </p>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
