@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>The Stable Core | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="The Stable Core" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a talk at the Mathematical Philosophy and Mathematical Practice Conference, University of Konstanz, September 20, 2018." />
+<meta property="og:description" content="This is a talk at the Mathematical Philosophy and Mathematical Practice Conference, University of Konstanz, September 20, 2018." />
+<link rel="canonical" href="http://localhost:4000/talks/2018/09/11/the-stable-core.html" />
+<meta property="og:url" content="http://localhost:4000/talks/2018/09/11/the-stable-core.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-11T00:00:00-04:00" />
+<script type="application/ld+json">
+{"description":"This is a talk at the Mathematical Philosophy and Mathematical Practice Conference, University of Konstanz, September 20, 2018.","@type":"BlogPosting","url":"http://localhost:4000/talks/2018/09/11/the-stable-core.html","headline":"The Stable Core","dateModified":"2018-09-11T00:00:00-04:00","datePublished":"2018-09-11T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/talks/2018/09/11/the-stable-core.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/header.JPG" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>The Stable Core</h1>
+
+	
+      <p>This is a talk at the <a href="https://network2018.forcing-project.com/">Mathematical Philosophy and Mathematical Practice Conference</a>, University of Konstanz, September 20, 2018.<!--more--></p>
+
+<p>Sy Friedman introduced an inner model, which he called the <em>Stable Core</em>, in the process of trying to understand how close the inner model ${\rm HOD}$ can be to the universe $V$ <a href="#Friedman:stableCore">[1]</a>. An <em>inner model</em> is a definable (possibly with parameters) transitive sub-model of the universe satisfying ${\rm ZF}({\rm C})$ and containing all the ordinals. It has long been the goal of the inner model theory program to construct a canonical inner model that is close to $V$ in the presence of very large large cardinals. Canonical inner models are built from the bottom up using absolute rules, and as a result of this construction process satisfy regularity properties, such as the ${\rm GCH}$ and $\square$, and are (generally) unaffected by enlargements of the universe via forcing. Each of these canonical inner models, for example, $L$, $K^{DJ}$, $L[U]$, are close to the universe $V$ in the absence of certain large cardinals, but are very far from a universe having those large cardinals. There are several ways in which we can request that an inner model is close to $V$. The inner model can have some form of covering, agree on large cardinals, or reach the universe $V$ by forcing, so that $V$ is a forcing extension of it.</p>
+
+<p>The canonical inner models ultimately attempt to generalize Gödel's constructible universe $L$, making it compatible with large cardinals. Another inner model introduced by Gödel, the collection ${\rm HOD}$ of all hereditarily ordinal definable sets, lacks the fine structure of the canonical inner models and therefore their absoluteness and regularity properties, but it makes up for it by being compatible with all known large cardinals and in fact all known set theoretic assertions. This is essentially because using coding any set or class can become ordinal definable in a forcing extension. Every set $A$ is coded by a set of ordinals because we can recover a set from its transitive closure, the transitive closure can be coded by a binary relation on some cardinal, which maps to it via the Mostowski collapse, and a set of pairs of ordinals can in turn be coded by a subset of the cardinal. Now given a subset $A$ of a cardinal $\kappa$, we use forcing to code it into the continuum pattern of the extension, thus making $A$ ordinal definable in the extension. Indeed, in this manner, we can code the entire universe $V$ into the continuum function of a class forcing extension, making $V$ be precisely the ${\rm HOD}$ of this extension $V[G]$ (this was apparently first shown by Roguski <a href="#Roguski:HOD">[2]</a>, the coding idea is due to McAloon). It follows that any universe is the ${\rm HOD}$ of some larger universe, so that ${\rm HOD}$ can satisfy any (believed to be) consistent set-theoretic assertion. It is known that ${\rm HOD}$ can be quite far from $V$. Cheng, Hamkins, and Friedman showed that it is consistent that every measurable cardinal is not even weakly compact in ${\rm HOD}$ and that there can be a supercompact cardinal that is not even weakly compact in ${\rm HOD}$ <a href="#ChengFriedmanHamkins:LargeCardinalsNeedNotBeLargeInHOD">[3]</a>. Cummings, Friedman, and Golshani showed that it is also consistent that $(\alpha^+)^{\rm{HOD}}<\alpha^+$ for every infinite cardinal $\alpha$ (missing reference). Woodin, however has conjectured that in the presence of very large large cardinals ${\rm HOD}$ will be much closer to $V$.</p>
+
+<p>In further trying to understand the relationship between ${\rm HOD}$ and $V$, Sy Friedman defined the ordinal definable <em>stability predicate</em> $S$ and showed that $V$ is a forcing extension of the structure $({\rm HOD},S)$, ${\rm HOD}$ together with a predicate for $S$ <a href="#Friedman:stableCore">[1]</a>. The stability predicate $S$ codes the elementarity relations between initial segments $H_\alpha$ of $V$. It consists of triples $(\alpha,\beta,n)$ where $\alpha$ and $\beta$ are strong limit cardinals such that $H_\alpha$ and $H_\beta$ satisfy $\Sigma_n$-Collection and $H_\alpha\prec_{\Sigma_n}H_\beta$. More precisely, Friedman showed that in the structure $({\rm HOD}, S)$, there is a definable class partial order $\mathbb P$ for which there is a generic filter $G\subseteq \mathbb P$ such that ${\rm HOD}[G]=V$. The result is quite subtle in that even though $(V,G)\models{\rm ZFC}$, $G$ is not definable over $V$. Hamkins and Reitz later showed that it is consistent for $V$ to not be a class forcing extension of ${\rm HOD}$, so some additional information is indeed required to make $V$ a forcing extension of ${\rm HOD}$ <a href="#HamkinsReitz:The-set-theoretic-universe-is-not-necessarily-a-forcing-extension-of-HOD">[4]</a>.</p>
+
+<p>Friedman's result showed that $V$ is already a class forcing extension of the structure $(L[S],S)$, which is the Stable Core of the title of the post. Because $S$ is ordinal definable, $L[S]\subseteq {\rm HOD}$, and Friedman showed that consistently $L[S]$ can be smaller than ${\rm HOD}$. It remained unknown whether the new inner model had any regularity properties or whether it was consistent with large cardinals. In a joint work with Sy Friedman and Sandra Müller we establish some further properties that are consistent with the Stable Core <a href="#FriedmanGitmanMuller:StableCore">[5]</a>.</p>
+
+<p>We generalized the recent work of Kennedy, Magidor, and Väänänen on the model $L[{\rm Card}]$ <a href="#KennedyMagidorVaananen:extendedLogics">[6]</a> to show that $K^{DJ}$ and $L[U]$ are always contained in the Stable Core. Recall that $K^{DJ}$ is the Dodd-Jensen core model below a measurable cardinal and $L[U]$ is the canonical inner model for one measurable cardinal. This shows, in particular, that the Stable Core of $L[U]$ is $L[U]$, so that the Stable Core can have a measurable cardinal. Same techniques, using Kunen's generalization of the $L[U]$ construction, can be used to show that the Stable Core can have a number of measurable cardinals. The next open question is whether the Stable Core can have a measurable limit of measurable cardinals. The question arises because Kennedy, Magidor, Väänänen and Welch (the result is still unpublished) showed that if the universe has a (little more than) a measurable limit of measurable cardinals, then $L[{\rm Card}]$ is a very simple model, in particular, it satisfies the ${\rm GCH}$ and has no measurable cardinals.</p>
+
+<p>It is relatively easy to code information into the Stable Core over canonical models ($L$, $K^{DJ}$, or $L[U]$) because we can use their definability inside the Stable Core to compare the changes we made to the elementarity relations between the $H_\alpha$ to the original relations. Using a coding along these lines, we show that any set which can be added generically to $L$ (or $L[U]$) can be coded into the Stable Core of a further forcing extension. From this it follows that the ${\rm GCH}$ can fail at every regular cardinal in the Stable Core, that ${\rm CH}$ can fail and Martin's Axiom can hold in the Stable Core, that any cardinal of $L$ can become countable in the Stable Core, etc. We also show that there is a forcing extension of $L[U]$ in which the measurable cardinal $\kappa$ remains measurable but $\kappa$ is not even weakly compact in the Stable Core. Thus, measurable cardinals are not downward absolute to the Stable Core. Because we don't know how to code information into the Stable Core over arbitrary models, these results leave open the general question about what does the Stable Core look like the presence of larger large cardinals such as a measurable limit of measurable cardinals.</p>
+
+<p>The open questions here are numerous! Here are a few. It is easy to see using coding that the ${\rm HOD}$ of ${\rm HOD}$ can be smaller than ${\rm HOD}$. Can the Stable Core of the Stable Core be smaller? Is there a bound on the large cardinals compatible with the Stable Core? Or are larger large cardinals downward absolute to the Stable Core? Is the Stable Core of $M_1$, the canonical model for one Woodin cardinal, $M_1$?</p>
+
+<h2>References</h2>
+<ol class="bibliography"><li><span id="Friedman:stableCore">S.-D. Friedman, “The stable core,” <i>Bull. Symbolic Logic</i>, vol. 18, no. 2, pp. 261–267, 2012. Available at: https://doi.org/10.2178/bsl/1333560807</span></li>
+<li><span id="Roguski:HOD">S. Roguski, “Cardinals and iterations of ${\rm HOD}$,” <i>Colloq. Math.</i>, vol. 58, no. 2, pp. 159–161, 1990. Available at: https://doi.org/10.4064/cm-58-2-159-161</span></li>
+<li><span id="ChengFriedmanHamkins:LargeCardinalsNeedNotBeLargeInHOD">Y. Cheng, S.-D. Friedman, and J. D. Hamkins, “Large cardinals need not be large in HOD,” <i>Ann. Pure Appl. Logic</i>, vol. 166, no. 11, pp. 1186–1198, 2015. Available at: https://doi.org/10.1016/j.apal.2015.07.004</span></li>
+<li><span id="HamkinsReitz:The-set-theoretic-universe-is-not-necessarily-a-forcing-extension-of-HOD">J. D. Hamkins and J. Reitz, “The set-theoretic universe $V$ is not necessarily a class-forcing extension of HOD,” <i>ArXiv e-prints</i>, Sep. 2017. Available at: http://jdh.hamkins.org/the-universe-need-not-be-a-class-forcing-extension-of-hod</span></li>
+<li><span id="FriedmanGitmanMuller:StableCore">S.-D. Friedman, V. Gitman, and S. Müller, “Some properties of the Stable Core,” <i>In preparation</i>. </span></li>
+<li><span id="KennedyMagidorVaananen:extendedLogics">J. Kennedy, M. Magidor, and J. Väänänen, “Inner models from extended logics,” <i>In preparation</i>. Available at: https://www.newton.ac.uk/files/preprints/ni16006.pdf</span></li></ol>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
