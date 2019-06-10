@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Virtual large cardinals | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="Virtual large cardinals" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a talk at Set Theory Day in New York, March 11, 2016." />
+<meta property="og:description" content="This is a talk at Set Theory Day in New York, March 11, 2016." />
+<link rel="canonical" href="/talks/2016/02/25/virtual-large-cardinals.html" />
+<meta property="og:url" content="/talks/2016/02/25/virtual-large-cardinals.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-02-25T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"This is a talk at Set Theory Day in New York, March 11, 2016.","@type":"BlogPosting","url":"/talks/2016/02/25/virtual-large-cardinals.html","headline":"Virtual large cardinals","dateModified":"2016-02-25T00:00:00-05:00","datePublished":"2016-02-25T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"/talks/2016/02/25/virtual-large-cardinals.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/header.JPG" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>Virtual large cardinals</h1>
+
+	
+      <p>This is a talk at <a href="http://nylogic.org/?seminars=set-theory-day" target="_blank">Set Theory Day</a> in New York, March 11, 2016.<!--more--></p>
+
+<p>Suppose $\mathcal A$ is a very large cardinal property, e.g., supercompact, extendible, or rank-into-rank, that is characterized by the existence of "suitable" set-sized embeddings. Although we won't be able to give a rigorous definition of suitability, we will try to give an intuitive description shortly. We shall say that a cardinal $\kappa$ is <em>virtually</em> $\mathcal A$ if the embeddings of $V$-structures characterizing $\mathcal A$ exist in set-forcing extensions. The term <em>virtual</em> is meant to connote that the required embeddings of $V$-structures exist in the virtual for $V$ reality of the generic multiverse.</p>
+
+<p>Although they share a broad philosophy, virtual large cardinals are very different from what are known as <em>generic</em> large cardinals. Suppose $\mathcal A$ is some large cardinal property. A tiny cardinal such as $\omega_1$ is a generic $\mathcal A$ cardinal in some universe $V$ if $V$ has forcing extensions with embeddings $j:V\to M$ satisfying the embedding characterization of $\mathcal A$. So, for instance, $\delta$ is <em>generically supercompact</em> if for every $\lambda>\delta$, in some set-forcing extension, there is an embedding $j:V\to M$ with $j"\lambda\in M$. The existence of a generic $\mathcal A$ cardinal typically has consistency strength on par with $\mathcal A$. Unlike generic large cardinals, virtual large cardinals are actual large cardinals that are situated between ineffable cardinals and $0^{\#}$ in the large cardinal hierarchy. Silver indiscernibles have all the virtual large cardinal properties we consider, and the virtual large cardinals are downward absolute to $L$. So in particular, again unlike a generic large cardinal, a virtual large cardinal is much weaker than its actual counterpart. The reason for these differences lies in the choice of the embedding characterizations we use to define the virtual large cardinals, namely that we use embeddings of set structures from $V$. This has two consequences. The first one is that the presence of the embeddings, even in a forcing extension, implies many of the smaller large cardinal properties of the original large cardinal such as weak compactness, ineffability, etc. The second one is that these embeddings, by virtue of being on structures from $V$, fail to capture the closure properties from which generic embeddings derive their strength. </p>
+
+<p>Schindler defined the first virtual large cardinal, the remarkable cardinal, to measure the consistency strength of the assertion that the theory of $L(\mathbb R)$ cannot be changed by proper forcing. </p>
+
+<p><strong>Definition</strong>: A cardinal $\kappa$ is <em>remarkable</em> if for every $\lambda>\kappa$, there is $\bar\lambda<\kappa$ such that in some set-forcing extension there is an elementary embedding $j:V^V_{\bar\lambda}\to V^V_\lambda$ with $j(\text{crit}(j))=\kappa$.</p>
+
+<p>Magidor showed that $\kappa$ is supercompact precisely when for every $\lambda>\kappa$, there is $\bar\lambda<\kappa$ such that there is an elementary embedding $j:V_{\bar\lambda}\to V_\lambda$ with $j(\text{crit}(j))=\kappa$ <a href="#magidor:supercompact">[1]</a>. So remarkable cardinals are <em>virtually supercompact</em>. Notice that if an embedding $j:V_{\bar\lambda}\to V_\lambda$ exists in $V$, then we can easily use it to obtain normal fine measures on $P_\kappa(\alpha)$ for any $\alpha=j(\bar\alpha)$ since $j"\bar\alpha\in V_\lambda$. But if $j$ is in some set-forcing extension, then there is no reason expect that $j"\bar\alpha$ is in $V$.</p>
+
+<p>Schindler showed that a remarkable cardinal is equiconsistent with the assertion that the theory of $L(\mathbb R)$ cannot be changed by proper forcing <a href="#schindler:remarkable1">[2]</a>. It turns out that remarkable cardinals is a very robust large cardinal notion that is equiconsistent with several other natural set theoretic assertions as well. Cheng and Schindler recently showed that third-order arithmetic together with Harrington's principle is  equiconsistent with a remarkable cardinal <a href="#ChengSchindler:Harrington">[3]</a>. In <a href="#BagariaGitmanSchindler:VopenkaPrinciple">[4]</a>, Schindler introduced the <em>weak Proper Forcing Axiom</em>, ${\rm wPFA}$, a natural weakening of ${\rm PFA}$ that implies ${\rm PFA}_{\aleph_2}$, which is equiconsistent with a remarkable cardinal. </p>
+
+<p>I showed with Philip Welch that remarkable cardinals fall in between 1-iterable and 2-iterable cardinals in consistency strength <a href="#gitman:welch">[5]</a> (see <a href="/publications/2009/07/31/ramsey-like-cardinals-ii/" target="_blank">this post</a> for the definition of the $\alpha$-iterable cardinals hierarchy). A remarkable cardinal is a 1-iterable limit of 1-iterable cardinals, and if $\kappa$ is $2$-iterable, then $V_\kappa$ is a model of proper class many remarkable cardinals. This has turned out to be an instance of the more general phenomena that the virtual large cardinal hierarchy intertwines with the $\alpha$-iterable cardinals hierarchy.</p>
+
+<p>Extendible and rank-into-rank cardinals easily lend themselves to virtualization. </p>
+
+<p><strong>Definition</strong>: A cardinal $\kappa$ is <em>virtually extendible</em> if for every $\alpha>\kappa$, there is an elementary embedding $j:V_\alpha^V\to V_\beta^V$ with $\text{crit}(j)=\kappa$ and $j(\kappa)>\alpha$.</p>
+
+<p>Virtually extendible cardinals are remarkable limits of remarkable cardinals and if $\kappa$ is 2-iterable, then $V_\kappa$ is a model of proper class many virtually extendible cardinals.  In <a href="#BagariaGitmanSchindler:VopenkaPrinciple">[4]</a>, we introduced the <em>Generic Vopěnka's Principle</em>, which asserts that for every proper class $\mathcal C$ of structures of the same type, there are $B\neq A$, both in $\mathcal C$, such that $B$ elementarily embeds into $A$ in some set-forcing extension. We showed that the Generic Vopěnka's Principle for $\Pi_1$-definable classes is equiconsistent with a proper class of remarkable cardinals, for $\Pi_2$-definable classes, it is equiconsistent with a proper class of virtually extendible cardinals and, more generally, for $\Pi_n$-definable classes ($n\geq 2$), it is equiconsistent with a proper class of $C^{(n)}$-virtually extendible cardinals (Bagaria defined, in [bibcite key=Bagaria:CnCardinals], that $\kappa$ is $C^{(n)}$-<em>extendible</em> if for every $\alpha>\kappa$ there exists an extendibility embedding $j$ with $V_{j(\kappa)}\prec_{\Sigma_n} V$).</p>
+
+<p><strong>Definition</strong>: A cardinal $\kappa$ is <em>virtually rank-into-rank</em> if there is $\alpha>\kappa$ such that in some set-forcing extension there is an elementary embedding $j:V_\alpha^V\to V_\alpha^V$ with $\text{crit}(j)=\kappa$.</p>
+
+<p>In the virtual world, we can even go beyond Kunen's Inconsistency because in a set-forcing extension we can have embeddings $j:V_\alpha\to V_\alpha$ where $\alpha>\!>\lambda$, the supremum of the critical sequence. It can be that $\alpha=\lambda^+$ or $\lambda^{++}$. This happens, for instance, if $0^{\#}$ exists and $\kappa$ is a Silver indiscernible. </p>
+
+<p>Virtually rank-into-rank cardinals sit between $\omega$-iterable and $\omega+1$-iterable cardinals in consistency strength.</p>
+
+<p><strong>Theorem</strong>: A virtually rank-into-rank cardinal is an $\omega$-iterable limit of $\omega$-iterable cardinals and an $\omega+1$-iterable cardinal implies the consistency of a virtually rank-into-rank cardinal.</p>
+
+<p>We cannot get a virtual version of $n$-huge cardinals because they don't have a suitable embedding characterization. Instead, we define the $n$-<em>huge*</em> cardinal hierarchy, which intertwines with the $n$-huge hierarchy, using the types of embeddings needed for virtualization.</p>
+
+<p><strong>Definition</strong>: A cardinal $\kappa$ is $n$-<em>huge*</em> if there is $\alpha>\kappa$ such that there is an elementary embedding $j:V_\alpha\to V_\beta$ with $\text{crit}(j)=\kappa$ and $j^n(\kappa)<\alpha$.</p>
+
+<p><strong>Proposition</strong> An $n$-huge* cardinal is an $n$-huge limit of $n$-huge cardinals and an $n+1$-huge cardinal is $n$-huge*. </p>
+
+<p><strong>Definition</strong>: A cardinal $\kappa$ is <em>virtually $n$-huge*</em> if there is $\alpha>\kappa$ such that in some set-forcing extension there is an elementary embedding $j:V_\alpha^V\to V_\beta^V$ with $\text{crit}(j)=\kappa$ and $j^n(\kappa)<\alpha$.</p>
+
+<p>If $\kappa$ is virtually huge*, then $\kappa$ is a 2-iterable limit of 2-iterable cardinals, and $V_\kappa$ is a model of proper class many virtually extendible cardinals. If $\kappa$ is 3-iterable, then $V_\kappa$ is a model of proper class many virtually huge* cardinals. More generally, we have:</p>
+<p>
+<strong>Theorem</strong>: A virtually $n$-huge* cardinal is an $n+1$-iterable limit of $n+1$-iterable cardinals, and if $\kappa$ is $n+2$-iterable, then $V_\kappa$ is a model of proper class many virtually $n$-huge* cardinals.</p>
+
+<p>One can also consider virtual large cardinals taking us well beyond Kunen's Inconsistency and those go up the $\alpha$-iterable cardinals hierarchy. </p>
+
+<p>This is joint work with Ralf Schindler.</p>
+
+<h2>References</h2>
+<ol class="bibliography"><li><span id="magidor:supercompact">M. Magidor, “On the role of supercompact and extendible cardinals in logic,” <i>Israel J. Math.</i>, vol. 10, pp. 147–157, 1971. </span></li>
+<li><span id="schindler:remarkable1">R.-D. Schindler, “Proper forcing and remarkable cardinals,” <i>Bull. Symbolic Logic</i>, vol. 6, no. 2, pp. 176–184, 2000. Available at: http://dx.doi.org.ezproxy.gc.cuny.edu/10.2307/421205</span></li>
+<li><span id="ChengSchindler:Harrington">Y. Cheng and R. Schindler, “Harrington’s principle in higher order arithmetic,” <i>J. Symb. Log.</i>, vol. 80, no. 2, pp. 477–489, 2015. Available at: http://dx.doi.org/10.1017/jsl.2014.31</span></li>
+<li><span id="BagariaGitmanSchindler:VopenkaPrinciple">J. Bagaria, V. Gitman, and R. Schindler, “Generic Vopěnka’s Principle, remarkable cardinals, and the
+              weak Proper Forcing Axiom,” <i>Arch. Math. Logic</i>, vol. 56, no. 1-2, pp. 1–20, 2017. Available at: http://dx.doi.org/10.1007/s00153-016-0511-x</span></li>
+<li><span id="gitman:welch">V. Gitman and P. D. Welch, “Ramsey-like cardinals II,” <i>The Journal of Symbolic Logic</i>, vol. 76, no. 2, pp. 541–560, 2011. Available at: http://dx.doi.org/10.2178/jsl/1305810763</span></li></ol>
+<div class="figure">
+<img src="/images/settheoryday.JPG"/>
+<figcaption>With my academic siblings</figcaption>
+</div>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
