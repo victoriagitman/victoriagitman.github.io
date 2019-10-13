@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>A model of second-order arithmetic with the choice scheme in which $\Pi^1_2$-dependent choice fails | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="A model of second-order arithmetic with the choice scheme in which $\Pi^1_2$-dependent choice fails" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a talk at the &lt;a \href=&quot;http://www.logic.univie.ac.at/Home.html&quot; target=&quot;_blank&quot;&gt;Kurt Gödel Research Center&lt;/a&gt; Research Seminar in Vienna, Austria, May 18, 2017." />
+<meta property="og:description" content="This is a talk at the &lt;a \href=&quot;http://www.logic.univie.ac.at/Home.html&quot; target=&quot;_blank&quot;&gt;Kurt Gödel Research Center&lt;/a&gt; Research Seminar in Vienna, Austria, May 18, 2017." />
+<link rel="canonical" href="/talks/2017/05/09/a-model-of-second-order-arithmetic.html" />
+<meta property="og:url" content="/talks/2017/05/09/a-model-of-second-order-arithmetic.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-05-09T00:00:00-04:00" />
+<script type="application/ld+json">
+{"description":"This is a talk at the &lt;a \\href=&quot;http://www.logic.univie.ac.at/Home.html&quot; target=&quot;_blank&quot;&gt;Kurt Gödel Research Center&lt;/a&gt; Research Seminar in Vienna, Austria, May 18, 2017.","@type":"BlogPosting","url":"/talks/2017/05/09/a-model-of-second-order-arithmetic.html","headline":"A model of second-order arithmetic with the choice scheme in which $\\Pi^1_2$-dependent choice fails","dateModified":"2017-05-09T00:00:00-04:00","datePublished":"2017-05-09T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"/talks/2017/05/09/a-model-of-second-order-arithmetic.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/header.JPG" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>A model of second-order arithmetic with the choice scheme in which $\Pi^1_2$-dependent choice fails</h1>
+
+	
+      <p>This is a talk at the <a \href="http://www.logic.univie.ac.at/Home.html" target="_blank">Kurt Gödel Research Center</a> Research Seminar in Vienna, Austria, May 18, 2017.<!--more--></p>
+
+<img src="/images/Josephinum.jpg" style="float:left; padding: 10px;"/>
+<p>A few years ago myself, Joel Hamkins, and Thomas Johnstone <a href="#GitmanHamkinsJohnstone:KMplus">[1]</a>
+(see this <a href="/talks/2014/07/30/choice-schemes-for-kelley-morse-set-theory/" target="_blank">post</a>) showed that the class choice scheme is independent of Kelley-Morse (${\rm KM}$) set theory in the strongest possible sense. The <em>class choice scheme</em> is the scheme asserting, for every second-order formula $\varphi(x,X,A)$, that if for every set $x$, there is a class $X$ such that $\varphi(x,X,A)$ holds, then there is a collecting class $Y$ such that the $x$-th slice $Y_x$ is some witness for $x$, namely $\varphi(x,Y_x,A)$ holds. We can also consider a weaker version of the choice scheme allowing only set many choices. We showed that it is relatively consistent to have a model of ${\rm KM}$ in which the choice scheme fails for a first-order assertion and only $\omega$-many choices. We also showed that ${\rm KM}$ together with the choice scheme for set many choices cannot prove the choice scheme even for first-order assertions. The choice scheme can be viewed either as a collection principle or as an analogue of the axiom of choice for classes. With the later perspective, we can also consider the <em>dependent choice scheme</em>, which asserts, for every second-order formula $\varphi(X,Y,A)$, that if for every $\alpha$-sequence of classes (coded by a class) $X$, there is a class $Y$ such that $\varphi(X,Y,A)$ holds, then there is a single class $Z$ coding ${\rm ORD}$-many dependent choices, namely for all ordinals $\alpha$, $\varphi(Z\upharpoonright\alpha,Z_\alpha,A)$ holds. Again, we can consider a weaker version of the dependent choice scheme where we only allow ordinal many choices. We conjectured that that the dependent choice scheme is independent of ${\rm KM}$ together with the choice scheme, but were not able to make further progress on the question.</p>
+
+<p>Usually when trying to prove a result about models of second-order set theory, it helps, as the first step, to understand analogous results for models of second-order arithmetic. There are many affinities, but also some notable differences between the kinds of results you can obtain in the two fields. Both the choice scheme and the dependent choice scheme were first considered and extensively studied in the context of models of second-order arithmetic (see <a href="#simpson:second-orderArithmetic">[2]</a>, Chapter VII.6). The analogue of ${\rm KM}$ in second-order arithmetic is the theory ${\rm Z}_2$, which consists of ${\rm PA}$ together with full second-order comprehension. The theory ${\rm Z}_2$ implies the choice scheme for $\Sigma^1_2$-formulas. This is true roughly because a model of ${\rm Z}_2$ can uniformly construct (a code for) $L_\alpha$ for every coded ordinal $\alpha$ and so it can pass to an $L_\alpha$ to select a unique witness for a $\Sigma^1_2$-assertion, which are absolute by Shoenfield's Absoluteness. The classic Feferman-Lévy model was used to show that the very next level $\Pi^1_2$-choice scheme can fail in a model of ${\rm Z}_2$. Consider a model $\mathcal M$ of ${\rm Z}_2$ whose sets are the reals of the Feferman-Lévy model of ${\rm ZF}$. The model $\mathcal M$ can construct (a code for) $L_{\aleph_n}$ for every natural number $n$, but it cannot collect the codes because $\aleph_\omega$ is uncountable. The dependent choice scheme for $\Sigma^1_2$-formulas also follows from ${\rm Z}_2$ (indeed from the choice scheme for $\Sigma^1_2$-formulas together with induction for $\Sigma^1_2$-formulas, see <a href="#simpson:second-orderArithmetic">[2]</a>, Theorem VII.6.9.2). Simpson claimed in 1972 that he had a proof of the independence of the $\Pi^1_2$-dependent choice scheme from ${\rm Z}_2$ together with the choice scheme but the proof was never published and has since been lost (I corresponded with Steve Simpson about it). So a few years ago Sy Friedman and myself set out to find a proof of this result.</p>
+
+<p>The standard strategy for obtaining a model of ${\rm Z}_2$ together with the choice scheme but with a $\Pi^1_2$-failure of the dependent choice scheme would be to construct a model of ${\rm ZF}$ in which ${\rm AC}_\omega$ holds, but ${\rm DC}$ fails for a $\Pi^1_2$-definable relation on the reals. We then take our model of ${\rm Z}_2$ whose sets are the reals of the ${\rm ZF}$-model, so that ${\rm AC}_\omega$ translates directly into the choice scheme holding. Such models of ${\rm ZF}$ are obtained as symmetric submodels of carefully chosen forcing extensions. The classical model of ${\rm AC}_\omega+\neg{\rm DC}$ (due to Jensen <a href="#jensen:ACplusNotDC">[3]</a>) is a symmetric submodel of the forcing extension adding a collection of Cohen subsets of $\omega_1$ indexed by nodes of the tree ${}^{\lt\omega}\omega_1$ with countable conditions. By choosing the right collections of automorphisms to consider, we obtain a symmetric submodel, call it $N$, which has the tree of the Cohen subsets, but no branch through the tree, witnessing a violation of ${\rm DC}$. The countable closure of the poset allows us to prove that the model $N$ satisfies ${\rm AC}_\omega$. The obvious obstacle in using the classical model for our purposes was that the relation witnessing failure of ${\rm DC}$ is not on the reals. We were able to obtain a variation on the classical model where we forced to add a collection of Cohen reals indexed by nodes of the tree ${}^{\lt\omega}\omega_1$ with finite conditions. We use that the poset is ccc to again argue that ${\rm AC}_\omega$ holds in the desired symmetric submodel. The new model has a relation on the reals witnessing a failure of ${\rm DC}$, but it is not at all clear why even the domain of the relation, namely the Cohen reals making up the nodes of the generic tree, would be definable over the reals. The collection of all Cohen reals is of course $\Pi^1_2$-definable, but there does not appear to be a good way of picking out those coming from the nodes of our tree.</p>
+
+<p>In our construction we force with a tree iteration of Jensen's forcing along the tree ${}^{\lt\omega}\omega_1$. Conditions in the forcing are finite subtrees of ${}^{\lt\omega}\omega_1$ whose $n$-level nodes are conditions in the $n$-length iteration of Jensen's forcing, so that nodes on the higher levels extend those from the lower levels. The tree iteration adds, for every node on level $n$ of ${}^{\lt\omega}\omega_1$, an $n$-length sequence of reals generic for the $n$-length iteration of Jensen's forcing with the sequences ordered by extension. Jensen's forcing is a subposet of Sacks forcing in $L$ which has the ccc and the property that it adds a unique generic real over $L$ (see this <a href="/talks/2017/01/20/a-countable-ordinal-definable-set-of-reals-without-ordinal-definable-elements/" target="_blank">post</a>). The poset is constructed using $\diamondsuit$ to seal maximal antichains. Kanovei and Lyubetsky recently showed that Jensen's forcing has an even stronger uniqueness of generic filters property <a href="#kanovei:productOfJensenReals">[4]</a>. They showed that a forcing extension of $L$ by the finite-support $\omega$-length product of Jensen's forcing has precisely the $L$-generic reals for Jensen's forcing which appear on the coordinates of the generic filter for the product. We were able to show that a forcing extension of $L$ by the tree iteration of Jensen's forcing has for a fixed $n$, precisely the generic $n$-length sequences of reals for the $n$-length iteration of Jensen's forcing which make up the nodes of the generic tree. Since the collection of the generic $n$-length sequences of reals for iterations of Jensen's forcing is $\Pi^1_2$ and the ordering of the sequences is by extension, we succeed in producing a symmetric submodel whose associated model of second-order arithmetic witnesses a $\Pi^1_2$-failure of the dependent choice scheme. That our symmetric model satisfied ${\rm AC}_\omega$ followed because the tree iteration forcing has the ccc.</p>
+
+<p>We are now working with Sy Friedman on transferring the arguments from second-order arithmetic to the context of second-order set theory. In particular, we hope to produce a subposet of $\kappa$-Sacks forcing for an inaccessible $\kappa$ in $L$ mimicking the properties of Jensen's forcing.</p>
+
+<h2>References</h2>
+<ol class="bibliography"><li><span id="GitmanHamkinsJohnstone:KMplus">V. Gitman, J. D. Hamkins, and T. Johnstone, “Kelley-Morse set theory and choice principles for classes.” </span></li>
+<li><span id="simpson:second-orderArithmetic">S. G. Simpson, <i>Subsystems of second order arithmetic</i>, Second. Cambridge University Press, Cambridge; Association for
+              Symbolic Logic, Poughkeepsie, NY, 2009, p. xvi+444. Available at: http://dx.doi.org/10.1017/CBO9780511581007</span></li>
+<li><span id="jensen:ACplusNotDC">R. B. Jensen, “Consistency results for models of ZF,” <i>Notices Am. Math. Soc.</i>, vol. 14, p. 137, 1967. </span></li>
+<li><span id="kanovei:productOfJensenReals">V. Kanovei and V. Lyubetsky, “A countable definable set of reals containing no definable elements.” </span></li></ol>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
