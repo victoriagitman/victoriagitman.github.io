@@ -10,13 +10,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is a talk at the Joint Mathematics Meeting, special session on &#39;Choiceless Set Theory and related areas&#39;, University of Denver, January 15-16, 2020.Slides" />
 <meta property="og:description" content="This is a talk at the Joint Mathematics Meeting, special session on &#39;Choiceless Set Theory and related areas&#39;, University of Denver, January 15-16, 2020.Slides" />
-<link rel="canonical" href="https://victoriagitman.github.io/talks/2019/10/10/ground-model-definability-in-zf.html" />
-<meta property="og:url" content="https://victoriagitman.github.io/talks/2019/10/10/ground-model-definability-in-zf.html" />
+<link rel="canonical" href="http://localhost:4000/talks/2019/10/10/ground-model-definability-in-zf.html" />
+<meta property="og:url" content="http://localhost:4000/talks/2019/10/10/ground-model-definability-in-zf.html" />
 <meta property="og:site_name" content="Victoria Gitman" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-10T00:00:00-04:00" />
 <script type="application/ld+json">
-{"description":"This is a talk at the Joint Mathematics Meeting, special session on &#39;Choiceless Set Theory and related areas&#39;, University of Denver, January 15-16, 2020.Slides","@type":"BlogPosting","url":"https://victoriagitman.github.io/talks/2019/10/10/ground-model-definability-in-zf.html","headline":"Ground model definability in ${\\rm ZF}$","dateModified":"2019-10-10T00:00:00-04:00","datePublished":"2019-10-10T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://victoriagitman.github.io/talks/2019/10/10/ground-model-definability-in-zf.html"},"@context":"http://schema.org"}</script>
+{"headline":"Ground model definability in ${\\rm ZF}$","dateModified":"2019-10-10T00:00:00-04:00","datePublished":"2019-10-10T00:00:00-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/talks/2019/10/10/ground-model-definability-in-zf.html"},"url":"http://localhost:4000/talks/2019/10/10/ground-model-definability-in-zf.html","description":"This is a talk at the Joint Mathematics Meeting, special session on &#39;Choiceless Set Theory and related areas&#39;, University of Denver, January 15-16, 2020.Slides","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,7 +74,7 @@ function toggle(id)
 
     <section class="main-content">
 
-	<h1>Ground model definability in ${\rm ZF}$</h1>
+	<h1>Ground model definability in ${&#92;rm ZF}$</h1>
 
 	
       <p>This is a talk at the <a href="http://jointmathematicsmeetings.org/jmm">Joint Mathematics Meeting</a>, special session on 'Choiceless Set Theory and related areas', University of Denver, January 15-16, 2020.<br><strong><a href="/files/ZFGroundModelDefinability.pdf">Slides</a></strong><!--more--></p>
@@ -111,13 +111,14 @@ An uncountable cardinal $\kappa$ is a <em>Löwenheim-Skolem</em> (${\rm LS}$) <e
 </ol>
 In a model of ${\rm ZFC}$, the ${\rm LS}$ cardinals are precisely the $\beth$-fixed point cardinals, and so in particular there are proper class many ${\rm LS}$ cardinals. Let us say, following Woodin, that an uncountable cardinal $\kappa$ is <em>supercompact</em> in a model of ${\rm ZF}$ if for every $\alpha\geq\kappa$, there is $\beta\geq\alpha$, a transitive set $N$ and an elementary embedding $j:V_\beta\to N$ such that the critical point of $j$ is $\kappa$, $\alpha < j(\kappa)$, and $N^{V_\alpha}\subseteq N$. It is not difficult to see that every supercompact cardinal is an ${\rm LS}$ cardinal. So, for example, models of ${\rm ZF}$ with a proper class of supercompact cardinals satisfy uniform ground model definability. </p>
 <p>
-The existence of ${\rm LS}$ cardinals is absolute throughout the generic multiverse <a href="#Usuba:ZFGroundModelDefinability">[5]</a>. It follows that if we can force choice over a ${\rm ZF}$-universe, then since its forcing extension has a proper class of ${\rm LS}$ cardinals, it must have a proper class of ${\rm LS}$ cardinals as well. Thus, in particular, ground model definability holds for any ${\rm ZF}$-universe, such as $L(\mathbb R)$, over which we can force the axiom of choice.</p>
+The existence of ${\rm LS}$ cardinals is absolute throughout the generic multiverse (missing reference). It follows that if we can force choice over a ${\rm ZF}$-universe, then since its forcing extension has a proper class of ${\rm LS}$ cardinals, it must have a proper class of ${\rm LS}$ cardinals as well. Thus, in particular, ground model definability holds for any ${\rm ZF}$-universe, such as $L(\mathbb R)$, over which we can force the axiom of choice.</p>
 <p>
 At the same time, it is known that there are ${\rm ZF}$ universes without any ${\rm LS}$-cardinals. Let's explain how. Usuba showed that if $\kappa$ is an ${\rm LS}$-cardinal, then the club filter on $\kappa^+$ must be $\kappa$-complete <a href="#Usuba:ZFGroundModelDefinability">[5]</a>. Asaf Karagila showed that every model $V$ of ${\rm ZFC}$ satisfying ${\rm GCH}$ has an extension to a model of ${\rm ZF}$ with the same cofinalities in which the club filter is not $\sigma$-complete on every regular cardinal $\kappa$ <a href="#karagila:Fodor">[6]</a>. This model cannot have any ${\rm LS}$ cardinals because if $\kappa$ in it was an ${\rm LS}$-cardinal, then $\kappa^+$ would be a regular cardinal (since cofinalities from $V$ are preserved) with a $\kappa$-complete club filter.</p>
 <p>
 One important consequence of uniform ground model definability is that it makes it possible to define in a first-order way the collection of all grounds of a ${\rm ZFC}$-universe. A priori this is a collection of classes, a second-order notion, but using ground model definability we can write down a first-order formula $\psi(x,y)$ such that for every set $a$, the class $W_a=\{x\mid \psi(x,a)\}$ is a ground of $V$ and for every $W$ ground of $V$, there is a set $a$ such that $W=W_a$. The first-order definability of the collection of grounds makes it possible to study their structure in ${\rm ZFC}$. This has led to the very fruitful subject of set-theoretic geology, initiated by Fuchs, Hamkins, and Reitz, which explores the structure of grounds of a set-theoretic universe. Ground model definability for ${\rm ZF}$ would allow us to extend the same analysis to ${\rm ZF}$-universes, and Usuba's theorem has now made such an analysis possible for a large collection of models, namely those with a proper class of ${\rm LS}$ cardinals. 
 
 We will have to wait to find out whether ground definability holds fully in ${\rm ZF}$.
+
 
 <h2>References</h2>
 <ol class="bibliography"><li><span id="laver:groundmodel">R. Laver, “Certain very large cardinals are not created in small forcing
@@ -126,10 +127,8 @@ We will have to wait to find out whether ground definability holds fully in ${\r
 <li><span id="hamkins:coverandapproximations">J. D. Hamkins, “Extensions with the approximation and cover properties have no
               new large cardinals,” <i>Fund. Math.</i>, vol. 180, no. 3, pp. 257–277, 2003. Available at: http://dx.doi.org/10.4064/fm180-3-4</span></li>
 <li><span id="gitmanjohnstone:groundmodels">V. Gitman and T. A. Johnstone, “On ground model definability,” in <i>Infinity, Computability, and Metamathematics: Festschrift in honour of the 60th birthdays of Peter Koepke and Philip Welch</i>, London, GB: College publications, 2014. </span></li>
-<li><span id="Usuba:ZFGroundModelDefinability">T. Usuba, “Choiceless Löwenheim-Skolem property and uniform definability of grounds,” <i>Manuscript</i>. </span></li>
+<li><span id="Usuba:ZFGroundModelDefinability">T. Usuba, “Choiceless Löwenheim-Skolem property and uniform definability of grounds.” </span></li>
 <li><span id="karagila:Fodor">A. Karagila, “Fodor’s lemma can fail everywhere,” <i>Acta Math. Hungar.</i>, vol. 154, no. 1, pp. 231–242, 2018. Available at: https://doi.org/10.1007/s10474-017-0768-5</span></li></ol>
-
-
 
       <footer class="site-footer">
         
