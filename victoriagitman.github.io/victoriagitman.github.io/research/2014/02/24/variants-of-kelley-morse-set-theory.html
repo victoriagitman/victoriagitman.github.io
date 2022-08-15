@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Variants of Kelley-Morse set theory | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="Variants of Kelley-Morse set theory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Joel Hamkins recently wrote an excellent post on Kelley-Morse set theory (${\rm KM}$) right here on Boolesrings. I commented on the post about the variations one finds of what precisely is included in the ${\rm KM}$ axioms. I claimed that the two most commonly encountered versions are easily seen to be equivalent and I am going to make that quick argument below." />
+<meta property="og:description" content="Joel Hamkins recently wrote an excellent post on Kelley-Morse set theory (${\rm KM}$) right here on Boolesrings. I commented on the post about the variations one finds of what precisely is included in the ${\rm KM}$ axioms. I claimed that the two most commonly encountered versions are easily seen to be equivalent and I am going to make that quick argument below." />
+<link rel="canonical" href="http://localhost:4000/research/2014/02/24/variants-of-kelley-morse-set-theory.html" />
+<meta property="og:url" content="http://localhost:4000/research/2014/02/24/variants-of-kelley-morse-set-theory.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-02-24T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"Joel Hamkins recently wrote an excellent post on Kelley-Morse set theory (${\\rm KM}$) right here on Boolesrings. I commented on the post about the variations one finds of what precisely is included in the ${\\rm KM}$ axioms. I claimed that the two most commonly encountered versions are easily seen to be equivalent and I am going to make that quick argument below.","@type":"BlogPosting","url":"http://localhost:4000/research/2014/02/24/variants-of-kelley-morse-set-theory.html","headline":"Variants of Kelley-Morse set theory","dateModified":"2014-02-24T00:00:00-05:00","datePublished":"2014-02-24T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/research/2014/02/24/variants-of-kelley-morse-set-theory.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/header.JPG" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>Variants of Kelley-Morse set theory</h1>
+
+	
+      <p>Joel Hamkins recently wrote an excellent <a href="http://jdh.hamkins.org/km-implies-conzfc/" target="_blank">post</a> on Kelley-Morse set theory (${\rm KM}$) right here on Boolesrings. I commented on the post about the variations one finds of what precisely is included in the ${\rm KM}$ axioms. I claimed that the two most commonly encountered versions are easily seen to be equivalent and I am going to make that quick argument below.<!--more--></p>
+
+<p>It is actually quiet surprising how little there is to be found about ${\rm KM}$ on the web. I had to dig through pages of Google search on ${\rm KM}$ (tediousness pays off) before I stumbled on a very interesting paper about forcing over models of ${\rm KM}$ by Ronaldo Chuaqui <a href="#chuaqui:km">[1]</a>. In a recent <a href="/research/2013/10/09/forcing-to-add-proper-classes-to-a-model-of-rm-gbc-an-introduction/" target="_blank">post</a>, I discussed some folklore results about class forcing over models of ${\rm GBC}$ that adds classes but not sets. Apparently, many of the standard forcing arguments can be done over models of ${\rm KM}$ where new sets and classes are added simultaneously while preserving ${\rm KM}$ to the forcing extension. This will probably make a future post, once I have figured out the details. But for now back to what precisely is ${\rm KM}$.</p>
+
+<p>There are two types of semantics for set theories with classes. A set theory with classes can be axiomatized in first-order logic by viewing classes as elements of the model and sets as those particular classes that happen to be $\in$-members of some other classes. Alternatively we can consider models in a two-sorted language with separate variable for sets and classes. Even though the particular approach one takes does not make much difference, let's fix here on the two-sorted language approach, so that a model of set theory with classes has the form $\langle M,\in,S\rangle$ where $M$ is the sets and $S$, some collection of subsets of $M$, is the classes.</p>
+
+<p>${\rm KM}$'s more widely studied cousin the Gödel-Bernays axioms ${\rm GBC}$ use a class existence principle that limits comprehension to formulas quantifying only over sets. Shoenfield showed that ${\rm GBC}$ is conservative over ${\rm ZFC}$, meaning that any statement about sets that follows from ${\rm GBC}$ already follows from ${\rm ZFC}$. His argument was proof theoretic, but with forcing this is easy to see because  an arbitrary model of ${\rm ZFC}$ can be extended to a model of ${\rm GBC}$ without adding sets by forcing the existence of a global well-order class. The axioms of ${\rm KM}$ include full class comprehension: any collection that is definable by a formula in the two-sorted language is a class. The use of full class comprehension was suggested by several logicians among them Tarski, Quine, and Mostowski before a coherent version of the axioms appeared in the appendix of Kelley's topology textbook <a href="#kelley:topology">[2]</a>.  ${\rm KM}$ is not conservative over ${\rm ZFC}$ because it proves for instance $\text{Con}({\rm ZFC})$, $\text{Con}(\text{Con}({\rm ZFC}))$ and much more, as Joel argued in his post. </p>
+
+<p>Here is a version of ${\rm KM}$ that is essentially the one given by Kelley and adapted in work on ${\rm KM}$ such as the forcing paper I mentioned earlier. So let's call it the <em>common version</em>. The axioms for sets are Extensionality, Pairing, Infinity, Union, Powerset, Regularity. The axioms for classes are:
+<ol>
+<li><strong>Extensionality</strong></li>
+<li><strong>Full Class Comprehension</strong>: If $\varphi(x)$ is any formula in the two-sorted language with class parameters, then the collection of all those sets such that $\varphi(x)$ holds is a class.</li>
+<li><strong>Replacement</strong>: If $F$ is a class function and $a$ is a set, then the range of $F\upharpoonright a$ is a set.</li>
+<li><strong>Global well-order</strong>: there is a 1-1 and onto class function $\varphi:{\rm ORD}\to V$.</li>
+</ol></p>
+<p>In place of (4), Kelley assumed that there is a global choice function $F$ on $V-\emptyset$ such $F(x)\in x$. But it is easy to argue that this is equivalent to the existence of a well-order of $V$. Clearly $F$ can be used to well-order every $V_{\xi+1}-V_\xi$ and then choose one such well-order for every $\xi$. The well-orders are then glued together to form a well-order of $V$. </p>
+
+<p>A slightly different axiomatization is found in the Wikipedia <a href="http://en.wikipedia.org/wiki/Morse%E2%80%93Kelley_set_theory" target="_blank">entry</a> on ${\rm KM}$. So let's call it the <em>Wikipedia version</em>. The two versions differ on the class part in that Replacement and Global well-order are replaced by the <em>Limitation of Size principle</em> stating that a class $C$ is proper if and only if there is a 1-1 function from $V$ to $C$. While I think Joel favors the common version, I am tempted by the, in my opinion, elegantly formulated Limitation of Size principle. The principle seems to nicely capture the idea that the classness of a class should be confirmed by a witness. Let's finish with a quick argument that the Limitation of Size principle implies and is implied by Replacement together with Global well-order. </p>
+
+<p><strong>Theorem</strong>: Every model of the common version of ${\rm KM}$ is a model of the Wikipedia version of ${\rm KM}$ and conversely.</p>
+<p><strong>Proof</strong>: Suppose that the common version holds and let's verify the Limitation of Size principle. Suppose that $C$ is a proper class. Fix a global well-order $\varphi:{\rm ORD}\to V$. Use $\varphi$ to define an enumeration $\langle c_\xi\mid\xi\in{\rm ORD}\rangle$ of $C$. Define $F:V\to C$ by $F(x)=c_{\varphi(x)}$. Clearly $F$ is 1-1. Next, suppose that $F:V\to C$ is 1-1. By using a global well-order to further shrink $C$ if necessary, we can assume that $F$ is onto. Let $F^{-1}:C\to V$. If $C$ is a set, then, by Replacement, the range of $F^{-1}$ is a set as well, but this is impossible.</p>
+
+<p>Now suppose that the Wikipedia version holds and let's verify that Replacement and Global well-order axioms hold. Global well-order follows nearly immediately because there is a 1-1 function from $V$ to ${\rm ORD}$. For Replacement, suppose that $F$ is a class function. Let $a$ be a set and let $b$ be the range of $F\upharpoonright a$. By using a global well-order to shrink $a$ if necessary, we can assume that $F$ is 1-1 on $a$. Let's assume towards a contradiction that $b$ is proper class. Then there is a 1-1 function $G:V\to b$. But then $G\circ F^{-1}:V\to a$ is 1-1, contradicting that $a$ is a set. $\square$</p>
+
+<h2>References</h2>
+<ol class="bibliography"><li><span id="chuaqui:km">R. Chuaqui, “Forcing for the impredicative theory of classes,” <i>J. Symbolic Logic</i>, vol. 37, pp. 1–18, 1972. </span></li>
+<li><span id="kelley:topology">J. L. Kelley, <i>General topology</i>. New York: Springer-Verlag, 1975, p. xiv+298. </span></li></ol>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
