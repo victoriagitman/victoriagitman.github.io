@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>The oddities of class forcing | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="The oddities of class forcing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I recently finished reading a series of excellent articles by Peter Holy, Regula Krapf, Philipp Lücke, Ana Njegomir and Philipp Schlicht investigating properties of class forcing over models of ${\rm GBC}$ (Gödel-Bernays set theory). So I would like to summarize their results in this post." />
+<meta property="og:description" content="I recently finished reading a series of excellent articles by Peter Holy, Regula Krapf, Philipp Lücke, Ana Njegomir and Philipp Schlicht investigating properties of class forcing over models of ${\rm GBC}$ (Gödel-Bernays set theory). So I would like to summarize their results in this post." />
+<link rel="canonical" href="http://localhost:4000/research/2016/12/06/the-oddities-of-class-forcing.html" />
+<meta property="og:url" content="http://localhost:4000/research/2016/12/06/the-oddities-of-class-forcing.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-12-06T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"I recently finished reading a series of excellent articles by Peter Holy, Regula Krapf, Philipp Lücke, Ana Njegomir and Philipp Schlicht investigating properties of class forcing over models of ${\\rm GBC}$ (Gödel-Bernays set theory). So I would like to summarize their results in this post.","@type":"BlogPosting","url":"http://localhost:4000/research/2016/12/06/the-oddities-of-class-forcing.html","headline":"The oddities of class forcing","dateModified":"2016-12-06T00:00:00-05:00","datePublished":"2016-12-06T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/research/2016/12/06/the-oddities-of-class-forcing.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/header.JPG" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>The oddities of class forcing</h1>
+
+	
+      <p>I recently finished reading a series of excellent articles by Peter Holy, Regula Krapf, Philipp Lücke, Ana Njegomir and Philipp Schlicht investigating properties of class forcing over models of ${\rm GBC}$ (Gödel-Bernays set theory). So I would like to summarize their results in this post. <!--more--> The bad news is that most crucial properties of set forcing that we rely on in forcing constructions can fail for a class forcing notion in a model of ${\rm GBC}$. There are some good news too. It turns out that most desirable properties in class forcing are equivalent either to <em>pretameness</em> or the ${\rm ORD}$-cc. A forcing notion has the ${\rm ORD}$-cc if all its antichains are sets. A forcing notion $\mathbb P$ is <em>pretame</em> if for every set-sized collection of dense classes $\{D_i\mid i\in I\}$ ($I$ a set) and every $p\in\mathbb P$, there is $q\leq p$ and sets $d_i\subseteq D_i$ for $i\in I$ such that each $d_i$ is predense below $q$. Pretame forcing notions are precisely the ones that preserve ${\rm GBC}^-$ (Gödel-Bernays without the powerset axiom) to a forcing extension (see <a href="#friedman:classforcing">[1]</a>). It is easy to come up with an example of class forcing which doesn't preserve ${\rm GBC}^-$, for instance take ${\rm Coll}(\omega,{\rm ORD})$ whose conditions are partial finite functions from $\omega$ to ${\rm ORD}$ ordered by inclusion. (The smaller class of <em>tame</em> forcing notions preserves full ${\rm GBC}$ over models of ${\rm GBC}$ and ${\rm KM}$ over models of ${\rm KM}$.) We can also eliminate many of the pathologies of class forcing by strengthening the base theory from ${\rm GBC}$ to say ${\rm KM}$ (Kelley-Morse set theory). </p>
+
+<p>There are many philosophical debates (e.g., <em>multiverse view</em> versus <em>universe view</em>) about the meta-mathematical interpretation of set forcing. The two standard ways of resolving the difficulty that generic filters exist outside the set theoretic universe are the <em>countable transitive models</em> approach and the <em>Boolean valued models</em> approach. In the countable transitive models approach, we force over countable transitive models that live in some larger ambient ${\rm ZFC}$ universe which has all the required generic filters. In the Boolean valued models approach, we find a definable, over $V$, class model of ${\rm ZFC}$ into which our universe $V$ elementary embeds and for which we have a generic filter in $V$ so that we can form its generic extension. Thus, we have classes in our universe which look like a model of ${\rm ZFC}$ and its forcing extension, and moreover this model behaves essentially like $V$ because $V$ elementarily embeds into it. In order to define these models, we pass from a fixed forcing $\mathbb P$ to its Boolean completion $\mathbb B$ (a unique up to isomorphism compelte Boolean algebra of which $\mathbb P$ is a dense subset). With $\mathbb B$, we can build the Boolean valued model $V^{\mathbb B}$ in the language with $\in$ and the predicate $\check V$ for the ground model (defined by $[[\tau\in\check V]]=\bigvee_{x\in V}[[\tau=x]]$). Let $U$ be any ultrafilter on $\mathbb B$ (no genericity is required). Let $V^{\mathbb B}/U$ consist of all $[\tau]_U$ with $\tau\in V^{\mathbb B}$ and $\check V_U$ consist of all $[\tau]_U$ with $[[\tau\in \check V]]\in U$. Then it will be the case that $\check V_U[[\dot G]_U]=V^{\mathbb B}/U$ and there is an elementary embedding $i:V\to \check V_U$, so that we can use $\check V_U$ and $V^{\mathbb B}/U$ as surrogates for $V$ and $V[G]$. For class forcing over models of ${\rm GBC}$, we are forced to adapt the countable transitive models approach because class partial orders don't need to have Boolean completions (sometimes not even for set-sized suprema). To be more precise, $\mathbb M=(M,\in,\mathcal C)$ of second-order set theory is a countable transitive model if $M$ is countable and transitive, and $\mathcal C$ is a countable collection of subsets of $M$. All results below are about countable transitive models of some second-order set theory. In the general set-up for class forcing, the transitivity requirement can be relaxed to allow for countable nonstandard models, but it has to be carefully checked (by someone) which of the results below transfer to this more general context.</p>
+
+<p><strong>Forcing Theorem</strong></p>
+<p>Suppose $\mathbb P$ is a notion of forcing. The <em>Forcing Theorem</em> for $\mathbb P$ has two parts. The <em>Definability Lemma</em> states that for a fixed formula $\varphi(\vec x)$, the set of all $(p,\vec\tau)$ with $p\in\mathbb P$ and $\mathbb P$-names $\vec\tau$ such that $p\Vdash\varphi(\vec\tau)$ is definable. The <em>Truth Lemma</em> states that if a forcing extension $V[G]$ by $\mathbb P$ satisfies $\varphi(\vec\tau)$, then there is some condition $p\in G$ with $p\Vdash\varphi(\vec\tau)$. The Forcing Theorem is the most basic fact about set forcing and it can fail for class forcing. Since, it is shown in <a href="#PeterHolyRegulaKrapfPhilippLuckeAnaNjegomirPhilippSchlicht:classforcing1">[2]</a> that the full Forcing Theorem follows from the Definability Lemma for atomic formulas, the failure of the Forcing Theorem for class forcing is already in the definability of atomic formulas. There are two ways to approach this problem. The Forcing Theorem holds for all pretame forcing notions (see <a href="#friedman:classforcing">[1]</a> or <a href="#PeterHolyRegulaKrapfPhilippSchlicht:classforcing2">[3]</a>), and so restricting to this class eliminates the worry that the Forcing Theorem fails. It should be noted that there are non-pretame forcing notions for which the Forcing Theorem holds (for instance ${\rm Coll}(\omega,{\rm ORD})$, see <a href="#friedman:classforcing">[1]</a>). We can also eliminate all such problems by moving to a stronger base theory, for example, ${\rm KM}$. Over ${\rm KM}$ and in fact already over the much weaker theory ${\rm GBC}+{\rm ETR}$ (${\rm ETR}$ is the principle of transfinite recursion over well-founded class relations, which states that every such first-order definable recursion has a solution, see <a href="#GitmanHamkins:OpenDeterminacyForClassGames">[4]</a> for more details), every class forcing satisfies the Forcing Theorem. The reason is that to prove the Definability Lemma for atomic formulas we need to perform a recursion over a well-founded class relation.</p>
+
+<p><strong>Boolean completions</strong></p>
+
+<p>Every separative set partial order $\mathbb P$ is a dense subset of its regular open algebra $\mathbb B$ which is a complete Boolean algebra. This algebra is unique up to isomorphism in the sense that if $\mathbb P$ is a dense subset of any other complete Boolean algebra $\bar {\mathbb B}$, then there is an isomorphism between $\mathbb B$ and $\bar {\mathbb B}$ fixing $\mathbb P$. A class Boolean algebra that has a class-sized antichain can never be complete <a href="#PeterHolyRegulaKrapfPhilippSchlicht:classforcing2">[3]</a>. So in the context of class forcing the most we can ask for is that every (separative) class partial order is a dense subset of a set-complete Boolean algebra. Even this fails <a href="#PeterHolyRegulaKrapfPhilippLuckeAnaNjegomirPhilippSchlicht:classforcing1">[2]</a>. There are separative class partial orders that don't have set-complete Boolean completions, and if such a completion does exist it need not be unique <a href="#PeterHolyRegulaKrapfPhilippLuckeAnaNjegomirPhilippSchlicht:classforcing1">[2]</a>. If the Forcing Theorem holds for a forcing notion $\mathbb P$, then $\mathbb P$ has a set-complete Boolean completion <a href="#PeterHolyRegulaKrapfPhilippLuckeAnaNjegomirPhilippSchlicht:classforcing1">[2]</a>. So every pretame notion of forcing has a set-complete Boolean completion. Again, this difficulty can also be eliminated by moving to a stronger theory such as ${\rm KM}$. In models of ${\rm KM}$, every (separative) class partial order $\mathbb P$ is a dense subset of a set-complete Boolean algebra and the regular open algebra of $\mathbb P$ is a definable hyperclass. So we have at least some access to the full Boolean completion of $\mathbb P$, which means that in principle we can attempt the Boolean valued model construction from set forcing.</p>
+
+<p><strong>Dense embeddings</strong></p>
+<p>If $\mathbb P$ and $\mathbb Q$ are set partial orders such that $\mathbb P$ densely embeds into $\mathbb Q$, then $\mathbb P$ and $\mathbb Q$ have the same forcing extensions. This can fail for class forcing, and the property holding is precisely equivalent to pretameness <a href="#PeterHolyRegulaKrapfPhilippSchlicht:classforcing2">[3]</a>. As an example of the failure of this property consider again the partial order ${\rm Coll}(\omega,{\rm ORD})$ and the variant ${\rm Coll}_*(\omega,{\rm ORD})$ whose conditions are functions $p:n\to{\rm ORD}$ for some $n\in\omega$. Clearly ${\rm Coll}_*(\omega,{\rm ORD})$ densely embeds into ${\rm Coll}(\omega,{\rm ORD})$, but with a little bit of work it can be shown that ${\rm Coll}(\omega,{\rm ORD})$ adds sets, while ${\rm Coll}_*(\omega,{\rm ORD})$ does not <a href="#PeterHolyRegulaKrapfPhilippLuckeAnaNjegomirPhilippSchlicht:classforcing1">[2]</a>.</p>
+
+<p><strong>Fullness</strong></p>
+<p>Suppose $\mathbb P$ is a set partial order. If $p\in\mathbb P$ and $p\Vdash \exists x\,\varphi(x)$, then there is a $\mathbb P$-name $\tau$ such that $p\Vdash\varphi(\tau)$. This property is called <em>fullness</em>. For class notions of forcing, fullness is equivalent to ${\rm ORD}$-cc.</p>
+
+<p><strong>Nice names</strong></p>
+<p>
+If $\mathbb P$ is a set forcing, then every subset of ordinals (say of $\alpha$) in a forcing extension has a <em>nice name</em>, meaning a $\mathbb P$-name of the form $\bigcup_{\gamma<\alpha}\{\check\gamma\}\times A_\gamma$, where the $A_\gamma$ are antichains of $\mathbb P$. Every forcing extension by ${\rm Coll}(\omega,{\rm ORD})$ has a subset of $\omega$ for which there is no nice name (missing reference).</p>
+
+<p><strong>Separation</strong></p>
+<p>We already know that class forcing need not preserve ${\rm GBC}$. Replacement clearly fails in any forcing extension by ${\rm Coll}_*(\omega,{\rm ORD})$. It is a bit trickier to see that Separation fails as well. Let $F:\omega\to{\rm ORD}$ be the surjection added by ${\rm Coll}_*(\omega,{\rm ORD})$. The set $\{n\in\omega\mid F(n)\text{ is odd}\}$ is not in the extension <a href="#PeterHolyRegulaKrapfPhilippSchlicht:classforcing3">[5]</a>. The failure of this instance of Separation uses a class parameter, namely $F$. It is also true that there is a cardinal and cofinality preserving partial order $\mathbb P$ (satisfying the Forcing Theorem) all of whose extensions have a failure of Separation that does not use class parameters <a href="#PeterHolyRegulaKrapfPhilippSchlicht:classforcing3">[5]</a>.</p>
+
+<h2>References</h2>
+<ol class="bibliography"><li><span id="friedman:classforcing">S. D. Friedman, <i>Fine structure and class forcing</i>, vol. 3. Walter de Gruyter &amp; Co., Berlin, 2000, p. x+221. Available at: http://dx.doi.org/10.1515/9783110809114</span></li>
+<li><span id="PeterHolyRegulaKrapfPhilippLuckeAnaNjegomirPhilippSchlicht:classforcing1">P. Holy, R. Krapf, P. Lücke, A. Njegomir, and P. Schlicht, “Class Forcing, the Forcing Theorem and Boolean Completions.” </span></li>
+<li><span id="PeterHolyRegulaKrapfPhilippSchlicht:classforcing2">P. Holy, R. Krapf, and P. Schlicht, “Characterizations of Pretameness and the Ord-cc.” </span></li>
+<li><span id="GitmanHamkins:OpenDeterminacyForClassGames">V. Gitman and J. D. Hamkins, “Open determinacy for class games,” in <i>Foundations of Mathematics, Logic at Harvard, Essays in Honor of Hugh Woodin’s 60th Birthday</i>, A. E. Caicedo, J. Cummings, P. Koellner, and P. Larson, Eds. American Mathematical Society, (expected) 2016. Available at: http://jdh.hamkins.org/open-determinacy-for-class-games</span></li>
+<li><span id="PeterHolyRegulaKrapfPhilippSchlicht:classforcing3">P. Holy, R. Krapf, and P. Schlicht, “Separation in Class Forcing Extensions.” </span></li></ol>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>

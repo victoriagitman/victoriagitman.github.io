@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>A countable ordinal definable set of reals without ordinal definable elements | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="A countable ordinal definable set of reals without ordinal definable elements" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a talk at the CUNY Set Theory Seminar, February 10, 2017." />
+<meta property="og:description" content="This is a talk at the CUNY Set Theory Seminar, February 10, 2017." />
+<link rel="canonical" href="http://localhost:4000/talks/2017/01/20/a-countable-ordinal-definable-set-of-reals.html" />
+<meta property="og:url" content="http://localhost:4000/talks/2017/01/20/a-countable-ordinal-definable-set-of-reals.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-01-20T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"This is a talk at the CUNY Set Theory Seminar, February 10, 2017.","@type":"BlogPosting","url":"http://localhost:4000/talks/2017/01/20/a-countable-ordinal-definable-set-of-reals.html","headline":"A countable ordinal definable set of reals without ordinal definable elements","dateModified":"2017-01-20T00:00:00-05:00","datePublished":"2017-01-20T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/talks/2017/01/20/a-countable-ordinal-definable-set-of-reals.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/header.JPG" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>A countable ordinal definable set of reals without ordinal definable elements</h1>
+
+	
+      <p>This is a talk at the <a href="http://nylogic.org" target="_blank">CUNY Set Theory Seminar</a>, February 10, 2017.<!--more--></p>
+
+<p>Back in 2010, Garabed Gulbenkian asked a <a href="http://mathoverflow.net/questions/17608/a-question-about-ordinal-definable-real-numbers" target="_blank">question</a> on MathOverflow whether it is possible that a countable ordinal definable set of reals has elements that are not ordinal definable. For those who need to be reminded, a set is <em>ordinal definable</em> if it is definable with ordinal parameters. Lets start with some motivation for the question.</p>
+
+<p>It is easy to see that every element of a <em>finite</em> ordinal definable set of reals $S$ is itself ordinal definable because it is the $m$-th real of $S$ in the lexicographical order for some finite $m$. Note that this observation uses a fundamental property of reals that there is such a lexicographical order, and indeed, this it is consistent to have a finite ordinal definable set (of sets of reals) without ordinal definable members. In a forcing extension of $L$ by two mutually generic Sacks reals $r$ and $s$, there is a definable set of two elements, namely the $L$-degrees of $r$ and $s$, neither of which is ordinal definable <a href="#GroszekLaver:leastDegrees">[1]</a>.</p>
+
+<p>On the other hand, it is consistent that there is an <em>uncountable</em> ordinal definable set of reals without any ordinal definable elements. Let $L[G]$ be a Cohen forcing extension of $L$ and consider the set $S$ of all non-constructible reals in $L[G]$. The set $S$ is obviously definable. The set $S$ cannot have any ordinal definable elements because by an automorphism argument, since Cohen forcing is almost homogeneous, every ordinal definable real of $L[G]$ is in $L$. (A forcing notion $\mathbb P$ is almost homogeneous if for any two conditions $p,q\in\mathbb P$, there is an automorphism $\pi$ such that $\pi(p)$ is compatible to $q$. A key property of almost homogeneous forcing is that if a condition forces a statement with ground model parameters, then this statement is forced by every condition.) Finally, $S$ is uncountable because it contains uncountably many Cohen reals: every constructible real gives rise to an automorphism of the Cohen poset via bit-wise addition.</p>
+
+<p>So what about countable ordinal definable sets of reals? It turned out that the answer to Gulbenkian's question was not known. Then several set theorists including myself together with Joel Hamkins tried to solve it. The question was finally settled by Kanovei and Lyubetsky in 2014. They showed that it is consistent to have a countable ordinal definable set of reals without ANY ordinal definable elements.</p>
+
+<p>The story of their proof starts with the question of determining the least projective complexity of a non-constructible real. By Shoenfield's Absoluteness, every $\Sigma_2^1$ or $\Pi_2^1$ real is constructible. In 1970, Jensen constructed in $L$ a ccc subposet $\mathbb P$ of Sacks forcing, using $\diamondsuit$ to seal maximal antichains, with the following properties <a href="#jensen:real">[2]</a>. In any model of set theory, the set of all $L$-generic reals for $\mathbb P$ is $\Pi^1_2$-definable, a property which is also true of Cohen forcing. But unlike Cohen extensions of $L$ which have uncountably many $L$-generic Cohen reals (see above), an $L$-generic extension by Jensen's forcing $\mathbb P$ adds a unique $L$-generic real, which is therefore $\Delta^1_3$-definable. This is a good moment to recall that although a generic filter for a poset of perfect trees technically consists of a collection of perfect trees, it is determined by a generic real, which is the intersection of all trees in the generic. So it is consistent that there are $\Delta_3^1$-non-constructible reals.</p>
+
+<p>Now let's consider an $\omega$-length finite-support product $\mathbb P^{\lt\omega}$ of Jensen's forcing $\mathbb P$. How many $L$-generic reals for $\mathbb P$ does $\mathbb P^{\lt\omega}$ add? Suppose for a moment that the only $L$-generic reals for $\mathbb P$ added by $\mathbb P^{\lt\omega}$ are those that appear on the coordinates of the generic filter for the product, in particular, there are countable many of them. Considering the uniqueness of generic reals property of $\mathbb P$, this is very plausible. It was conjectured to be true by Ali Enayat. If true, this would solve Gulbenkian's question because by a coordinate-switching automorphism argument for finite-support products, no real appearing on a coordinate of an $L$-generic filter for $\mathbb P^{\lt\omega}$ can be ordinal definable. Kanovei and Lyubetsky proved that $\mathbb P^{\lt\omega}$ indeed has this property, finishing our story <a href="#kanovei:productOfJensenReals">[3]</a>.</p>
+
+<p>In the talk, I will give full details of their argument from <a href="#kanovei:productOfJensenReals">[3]</a> and if there is interest I will post my detailed notes on their argument. Here are the <a href=/files/JensenForcingTalk.pdf" target="_blank":>notes</a>!</p>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
