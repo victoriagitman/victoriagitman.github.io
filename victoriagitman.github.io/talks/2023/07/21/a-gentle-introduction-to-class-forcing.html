@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>A gentle introduction to class forcing | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="A gentle introduction to class forcing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a talk at the Konstanz Logik Kolloquium, University of Konstanz, July 21, 2023.Slides" />
+<meta property="og:description" content="This is a talk at the Konstanz Logik Kolloquium, University of Konstanz, July 21, 2023.Slides" />
+<link rel="canonical" href="/talks/2023/07/21/a-gentle-introduction-to-class-forcing.html" />
+<meta property="og:url" content="/talks/2023/07/21/a-gentle-introduction-to-class-forcing.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-07-21T00:00:00-04:00" />
+<script type="application/ld+json">
+{"headline":"A gentle introduction to class forcing","dateModified":"2023-07-21T00:00:00-04:00","datePublished":"2023-07-21T00:00:00-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/talks/2023/07/21/a-gentle-introduction-to-class-forcing.html"},"url":"/talks/2023/07/21/a-gentle-introduction-to-class-forcing.html","description":"This is a talk at the Konstanz Logik Kolloquium, University of Konstanz, July 21, 2023.Slides","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/kon3.jpg" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>A gentle introduction to class forcing</h1>
+
+	
+      <p>This is a talk at the Konstanz Logik Kolloquium, University of Konstanz, July 21, 2023.<br><strong><a href="/files/KonstanzClassForcing.pdf">Slides</a></strong><!--more--></p>
+<p>
+The technique of forcing, discovered by Paul Cohen in the 1960's, is one of the most widely used in modern set theory. Using a cleverly chosen partial order in a universe of set theory (model of ZFC) together with an external object, the generic filter for that partial order, we can extend the universe to a larger universe, the forcing extension, satisfying some desired property or list of properties. While using set partial orders allows us to control the local properties of a forcing extension, such as the size of the powerset of a single cardinal or a set of cardinals, in order to globally modify how our universe looks, by, for example, getting the generalized continuum hypothesis to fail at every cardinal, we need to use class partial orders.
+</p><p>
+As class forcing began to be used more widely in set theoretic constructions, set theorists began trying to systematically study its properties. It quickly became obvious that first-order set theory, where classes are merely objects in the meta-theory, is not the correct framework for formalizing and studying the properties of class forcing, which is fundamentally about class objects. Class forcing, as any concept that operates on classes, is best understood in the framework of second-order set theory in which both sets and classes are objects. It has since turned out that properties of class forcing are indeed determined by which classes exist around them, namely which second-order class existence axioms hold.
+</p><p>
+Although set theorists have successfully used class partial orders to construct numerous interesting universes, class forcing does not generally work anywhere near as nicely as set forcing. Most significantly, class forcing does not necessarily preserve ZFC and satisfies the forcing theorem (the assertion that the forcing relation is definable) only in strong enough second-order set theories. Many other widely used results about set forcing can fail for class forcing as well, even in strong second-order theories.
+</p><p>
+In this talk, I will explain how to formalize class forcing in the context of second-order set theory and discuss how the familiar properties of set forcing hold up or fail for class partial orders.
+</p>
+<div class="figure">
+<img src="/images/kon1.jpg" />
+</div>
+<div class="figure">
+<img src="/images/kon2.jpg" />
+</div>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
