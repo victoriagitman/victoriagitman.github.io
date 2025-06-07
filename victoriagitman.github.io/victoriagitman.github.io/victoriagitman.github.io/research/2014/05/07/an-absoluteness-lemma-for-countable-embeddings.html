@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>An absoluteness lemma for countable embeddings | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="An absoluteness lemma for countable embeddings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="If $W$ is a transitive set or class and it thinks that there is an elementary embedding $j$ between some first-order structures $\mathcal M$ and $\mathcal N$, then $j$ is an actual elementary embedding and so the universe $V$ agrees that this is the case. Technically speaking, the existence of elementary embeddings between first-order structures is upwards absolute between transitive sets or classes. At this point, the reader&#39;s well-honed set theoretic intuition should immediately warn against the possibility of downward absoluteness." />
+<meta property="og:description" content="If $W$ is a transitive set or class and it thinks that there is an elementary embedding $j$ between some first-order structures $\mathcal M$ and $\mathcal N$, then $j$ is an actual elementary embedding and so the universe $V$ agrees that this is the case. Technically speaking, the existence of elementary embeddings between first-order structures is upwards absolute between transitive sets or classes. At this point, the reader&#39;s well-honed set theoretic intuition should immediately warn against the possibility of downward absoluteness." />
+<link rel="canonical" href="/research/2014/05/07/an-absoluteness-lemma-for-countable-embeddings.html" />
+<meta property="og:url" content="/research/2014/05/07/an-absoluteness-lemma-for-countable-embeddings.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-05-07T00:00:00-04:00" />
+<script type="application/ld+json">
+{"headline":"An absoluteness lemma for countable embeddings","dateModified":"2014-05-07T00:00:00-04:00","datePublished":"2014-05-07T00:00:00-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/research/2014/05/07/an-absoluteness-lemma-for-countable-embeddings.html"},"url":"/research/2014/05/07/an-absoluteness-lemma-for-countable-embeddings.html","description":"If $W$ is a transitive set or class and it thinks that there is an elementary embedding $j$ between some first-order structures $\\mathcal M$ and $\\mathcal N$, then $j$ is an actual elementary embedding and so the universe $V$ agrees that this is the case. Technically speaking, the existence of elementary embeddings between first-order structures is upwards absolute between transitive sets or classes. At this point, the reader&#39;s well-honed set theoretic intuition should immediately warn against the possibility of downward absoluteness.","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/kon3.jpg" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>An absoluteness lemma for countable embeddings</h1>
+
+	
+      <p>If $W$ is a transitive set or class and it thinks that there is an elementary embedding $j$ between some first-order structures $\mathcal M$ and $\mathcal N$, then $j$ is an actual elementary embedding and so the universe $V$ agrees that this is the case. Technically speaking, the existence of elementary embeddings between first-order structures is <em>upwards absolute</em> between transitive sets or classes. At this point, the reader's well-honed set theoretic intuition should immediately warn against the possibility of downward absoluteness.  <!--more--> If some larger model with lots more sets has an elementary embedding between two structures, there is no reason to suppose that a smaller poorer model would have one as well. It is not difficult to come up with counterexamples, so let's look at some, where the first-order structures are themselves models of set theory.</p>
+
+<p>If $0^\sharp$ exists, then $V$ has a nontrivial elementary embedding $j:L_{\gamma}\to L_\delta$ for some $L$-cardinal $\gamma$ (with critical point $\kappa<\gamma$), but no such embedding can exist in $L$ because the ultrapower of $L$ by the ultrafilter $U$ generated from such an embedding $(U=\{A\mid \kappa\in j(A)\})$ is well-founded (this needs an argument), and therefore Mostowski collapses to give an elementary embedding $j:L\to L$ that is definable in $L$, which violates the Kunen Inconsistency <a href="#jech:settheory">[1]</a>.</p>
+
+<p>Other examples can be obtained by collapsing cardinals in a forcing extension. One of the prettiest results in the model theory of set theoretic structures (and models of ${\rm PA}$) states that any two countable computably saturated models of ${\rm ZFC}$ with the same theory and standard system must be isomorphic. The <em>standard system</em> of a model of ${\rm ZFC}$ consists of the standard initial segments of its reals (viewed as sequences of 0s and 1s). A model of ${\rm ZFC}$ is <em>computably saturated</em> if it already realizes all finitely realizable computable types (with parameters), where a type is <em>computable</em> if the collection of Gödel codes of its formulas is computable. Obviously no model of size $\omega_1$ can embed into a countable model. So let's suppose we have a countable computably saturated $N\models{\rm ZFC}$ and a computably saturated $M\models{\rm ZFC}$ of size $\omega_1$ such that $M$ and $N$ are elementarily equivalent and have the same standard system. This is possible because fixing $N$, we can elementarily top-extend it $\omega_1$-many times to produce the required model $M$ (see this <a href="/talks/2013/11/13/a-jonsson-omega_1-like-model-of-set-theory/" target+"_blank">post</a> on $\omega_1$-like models). To ensure that $M$ is computably saturated, we use a deep theorem stating that a countable model $N$ is computably saturated if and only if it has a truth predicate $T\subseteq N$ such that $(N,\in,T)\models{\rm ZFC}$ <a href="#kaye:modelsofPA">[2]</a>, and instead of top-extending just $(N,\in)$, we top-extend $(N,\in,T)$. Because the final model $M$ has a truth predicate, it must be computably saturated (this easy direction does not require countability). So now go to a forcing extension $V[G]$, where $\omega_1$ is collapsed to $\omega$. There $M$ and $N$ are countable elementarily equivalent computably saturated models with the same standard system and therefore isomorphic!</p>
+
+<p>Now having the counterexamples out of the way, we can get to the point of this post. The existence of an elementary embedding between structures $\mathcal M$ and $\mathcal N$ is downward absolute so long as $M$ is countable! </p>
+
+<p><strong>Absoluteness Lemma:</strong> Suppose that $\mathcal M$ and $\mathcal N$ are countable first-order structures and $j:M\to N$ is an elementary embedding. If $W\subseteq V$ is a transitive (set or class) model of ${\rm ZFC}^-$ such that $\mathcal M$ is countable in $W$ and $\mathcal N\in W$, then $W$ has some elementary embedding $j^*:M\to N$. Furthermore, if $M$, $N$ are transitive models of set theory, $\text{cp}(j)=\gamma$ and $j(\gamma)=\delta$, we can additionally assume that $\text{cp}(j^*)=\gamma$ and $j^*(\gamma)=\delta$. Also, we can assume that $j$ and $j^*$ agree on some fixed finite number of values.</p>
+
+<p><strong>Proof:</strong> Fix some enumeration $M=\langle a_i\mid i\in\omega\rangle$ that exists in $W$. Say that a sequence $\langle b_0,\ldots,b_{n-1}\rangle$ of elements of $N$ is a <em>finite partial embedding</em> if for every formula $\varphi(x_0,\ldots,x_{n-1})$, we have that
+<p align="center">$\mathcal M\models\varphi(a_0,\ldots,a_{n-1})\Leftrightarrow \mathcal N\models\varphi(b_0,\ldots,b_{n-1})$</p>
+Let $T$ consist of all finite partial embeddings. Observe that $T$ is clearly a tree under the natural ordering by extension and it has height at most $\omega$. Also, $T$ is an element of $W$. Clearly any cofinal branch through $T$ gives an embedding $h:M\to N$. Let $c_i=j(a_i)$. Every sequence $\langle c_0,\ldots,c_{n-1}\rangle$ is a partial finite embedding in $W$ and the collection $\langle c_i\mid i\in\omega\rangle$ is a cofinal branch through $T$ in $V$. Thus, the tree $T$ is ill-founded in $V$. But then $T$ must be ill-founded in $W$ as well because otherwise $W$ would have rank function for $T$ and this rank function would attest to its well-foundedness in $V$. Thus, $W$ has a cofinal branch through $T$ and this branch gives some embedding $j^*:M\to N$. To achieve that $j$ and $j^*$ agree on the critical point, we limit the tree $T$ to partial finite embeddings fixing all $\alpha$ below the critical point of $j$ and having $b_n=\delta$, where $a_n=\gamma$. An agreement on some finitely many values is achieved similarly. $\square$</p>
+
+<p>I learned about this folklore absoluteness lemma while working with <a href="/talks/2014/03/01/introduction-to-remarkable-cardinals/" target="_blank">remarkable cardinals</a>, many of whose remarkable properties tend to magically materialize out of its application. This proof came out of a discussion with Joel Hamkins, who interrupted my convoluted argument with his usual "but wait, isn't it like this...." and everything quickly became crystal clear.</p>
+
+<h2>References</h2>
+<ol class="bibliography"><li><span id="jech:settheory">T. Jech, <i>Set theory</i>. Berlin: Springer-Verlag, 2003, p. xiv+769. </span></li>
+<li><span id="kaye:modelsofPA">R. Kaye, <i>Models of Peano arithmetic</i>, vol. 15. The Clarendon Press, Oxford University Press, New York, 1991, p. x+292. </span></li></ol>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
