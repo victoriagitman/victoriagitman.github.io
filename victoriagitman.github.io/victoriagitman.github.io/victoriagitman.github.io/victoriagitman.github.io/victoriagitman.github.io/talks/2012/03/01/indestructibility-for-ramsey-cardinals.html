@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Indestructibility for Ramsey cardinals | Victoria Gitman</title>
+<meta name="generator" content="Jekyll v3.8.0" />
+<meta property="og:title" content="Indestructibility for Ramsey cardinals" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a talk at the Rutgers Logic Seminar, April 2, 2012.Slides" />
+<meta property="og:description" content="This is a talk at the Rutgers Logic Seminar, April 2, 2012.Slides" />
+<link rel="canonical" href="/talks/2012/03/01/indestructibility-for-ramsey-cardinals.html" />
+<meta property="og:url" content="/talks/2012/03/01/indestructibility-for-ramsey-cardinals.html" />
+<meta property="og:site_name" content="Victoria Gitman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2012-03-01T00:00:00-05:00" />
+<script type="application/ld+json">
+{"headline":"Indestructibility for Ramsey cardinals","dateModified":"2012-03-01T00:00:00-05:00","datePublished":"2012-03-01T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/talks/2012/03/01/indestructibility-for-ramsey-cardinals.html"},"url":"/talks/2012/03/01/indestructibility-for-ramsey-cardinals.html","description":"This is a talk at the Rutgers Logic Seminar, April 2, 2012.Slides","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header">
+	<div id="header">
+  	<img style="float: left;" src="/images/kon3.jpg" alt="picture" />
+ 	</div> 
+      <h1 class="project-name">Victoria Gitman</h1>
+      <a href="/" class="nav">Home</a> &nbsp;&nbsp;<a href="/about" class="nav">About</a> &nbsp;&nbsp; <a href="/posts" class="nav">Posts</a> &nbsp;&nbsp; <a href="/research" class="nav">Research</a> 
+	    &nbsp;&nbsp; <a href="/talks" class="nav">Talks</a>  </br></br></br>
+	    
+    </section>
+
+    <section class="main-content">
+
+	<h1>Indestructibility for Ramsey cardinals</h1>
+
+	
+      <p>This is a talk at the <a href="http://www.math.rutgers.edu/seminars/allseminars.php?sem_name=Logic%20Seminar" target="_blank">Rutgers Logic Seminar</a>, April 2, 2012.<br><strong><a href="/files/ramseyindes.pdf">Slides</a></strong><!--more--></p>
+
+<p>Forcing is the main technique set theorists use for showing the consistency of various combinations of set theoretic properties. While a forcing extension $V[G]$ of a model $V$ of ${\rm ZFC}$ continues to satisfy ${\rm ZFC}$, it is not guaranteed that if $\kappa$ was a large cardinal in $V$, it will continue to be so in $V[G]$. For instance, forcing to collapse a large cardinal $\kappa$ to $\omega_1$, surely destroys the large cardinal. In order to establish the consistency of a large cardinal with a property obtainable by forcing, we need to argue that the large cardinal is <em>indesructible</em> by the forcing notion involved. This is precisely how we can determine something like the consistency strength of the ${\rm GCH}$ failing at a large cardinal. The standard toolkit of indestructibility techniques is designed for large cardinals that are characterized by the existence of elementary embeddings. This is true of measurable cardinals and most stronger large cardinals $\kappa$, which are characterized by the existence of elementary embeddings $j:V\to M$ from the universe $V$ into a transitive class $M$  with critical point $\kappa$ (the least ordinal moved) and whatever additional properties specific to the large cardinal. To argue, that, say, a measurable cardinal is not destroyed in a forcing extension $V[G]$ by $\mathbb P$, we work in $V[G]$ to extend $j$ to an elementary embedding $j:V[G]\to M[H]$. The target model must have the form $M[H]$, where $H$ is an $M$-generic filter for the poset $j(\mathbb P)$, by elementarity. The main theorem of the indestructibility toolkit, the <em>lifting criterion</em>, gives a prescription for extending $j$ to $V[G]$, so long as we can find an $M$-generic filter $H$ for $j(\mathbb P)$ containing $j''G$ as a subset. To obtain $H$, we use another crucial theorem from the toolkit, the <em>diagonalization criterion</em>, which generalizes the construction for obtaining generic filters for countable models to models of higher cardinality. Does this strategy apply to large cardinals weaker than a measurable cardinal? </p>
+
+<p>Despite the fact that smaller large cardinals are most widely recognized for their combinatorial properties, many are characterized by the existence of elementary embeddings for ``mini-universes&quot; of set theory. The ``mini-universes&quot; are formally known as <em>weak $\kappa$-models</em>, $M\models {\rm ZFC}^-$ (${\rm ZFC}$ without powerset and with collection scheme instead of the replacement scheme) of size $\kappa$ and with $\kappa\in M$. Weakly compact cardinals have the simplest such characterization. A cardinal $\kappa$ is weakly compact if and only if every $A\subseteq\kappa$ is contained in a weak $\kappa$-model $M$ for which there exists an elementary embedding $j:M\to N$ with $N$ transitive and critical point $\kappa$. Ramsey cardinals are also in the league of smaller large cardinals having a little known but quite elegant elementary embeddings characterization. To motivate the characterization, let&#039;s recall that the existence of a definable elementary embedding $j:V\to M$ with critical point $\kappa$ is equivalent to the existence of a $\kappa$-complete ultrafilter on $\kappa$. Analogously, the existence of an elementary embedding $j:M\to N$ with critical point $\kappa$ is equivalent to the existence of an <em>$M$-ultrafilter</em> with a well-founded ultrapower. $M$-ultrafilters are very different creatures from the ultrafilters associated to measurable cardinals. For one thing they are, in almost all interesting cases, external to $M$. They measure just the subsets of $\kappa$ that are elements of $M$ and are $\kappa$-complete just for sequences in $M$. Since it is possible that a countable sequence of elements of an $M$-ultrafilter has an empty intersection, there is no reason to believe that the ultrapower by such an ultrafilter must be well-founded [bibcite key=gaifman:ultrapowers]. To attempt another broken analogy between $\kappa$-complete ultrafilters and $M$-ultrafilters, recall that the ultrapower construction with a $\kappa$-complete ultrafilter can be iterated ${\rm ORD}$-many times. The successor stages are constructed by taking the ultrapower by the image of the ultrafilter from the previous stage and direct limits are taken at limit stages. A famous theorem of Gaifman states that all such <em>iterated ultrapowers</em> are well-founded. To iterate the ultrapower construction by an $M$-ultrafilter $U$, we first need to decide what happens at successor stages since it is no longer possible to take the image of the externally existing ultrafilter. If $j:M\to N$ is the ultrapower map by $U$, we may try to obtain an $N$-ultrafilter $W$ by viewing $U$ as a predicate over $M$ and using &#321;&#243;s theorem: 
+
+$$W=\{[f]_U\mid \{\alpha&lt;\kappa\mid f(\alpha)\in U\}\}\in U.$$</p>
+
+<p>This clearly requires an additional assumption that sets of the form $\{\alpha&lt;\kappa\mid f(\alpha)\in U\}$ be elements of $M$ and comes down to the property known as <em>weak amenability</em> that ``$\kappa$-sized&quot; pieces of $U$ are elements of $M$. Luckily if $U$ is weakly amenable, then so is $W$ and in fact, weak amenability propagates all along the iteration. So in possession of a weakly amenable $M$-ultrafilter, we may iterate the ultrapower construction. But the trouble does not stop there. For weakly amenable $M$-ultrafilters with a well-founded ultrapower, it does not follow that the iterates must all be well-founded. Indeed, we showed with Philip Welch that it is possible that an $M$-ultrafilter has anywhere from $1$ to any countable $\alpha$-many well-founded iterated ultrapowers (a part of the proof of Gaifman&#039;s theorem shows that if the first $\omega_1$-many iterated ultrapowers are well-founded than the rest must be well-founded as well) <a href="#gitman:welch">[1]</a>. To ensure that all the iterates all well-founded, a sufficient condition due to Kunen is that the $M$-ultrafilter is countably complete, that is the intersection of any countable sequence of its elements is non-empty <a href="#kunen:ultrapowers">[2]</a>. We can now fully appreciate the elementary embeddings characterization of Ramsey cardinals. A cardinal $\kappa$ is Ramsey if and only if every $A\subseteq\kappa$ is contained in a weak $\kappa$-model $M$ for which there exists a weakly amenable countably complete $M$-ultrafilter on $\kappa$. Pretty elegant right? </p>
+
+<p>Unfortunately this elegant characterization does not submit itself easily to the indestructibility toolkit. The diagonalization criterion requires embeddings to be on <em>$\kappa$-models</em>, weak $\kappa$-models that are closed under sequences of length less than $\kappa$, which does not happen for the Ramsey embeddings. In fact, I showed that the existence of weakly amenable $M$-ultrafilters for $\kappa$-models pushes up the consistency strength beyond Ramsey cardinals. Also, it is not sufficient to simply extend the ultrapower embedding to the model $M[G]$. The extension is guaranteed by a simple argument to be the ultrapower by some $M[G]$-ultrafilter, but that ultrafilter is not guaranteed to be either weakly amenable or countably complete. While weak amenability usually follows easily, countable completeness presents a challenge.</p>
+
+<p>In this talk, we will present a new diagonalization criterion for models without closure and give sufficient conditions for the $M[G]$-ultrafilter resulting from extending the ultrapower embedding to $M[G]$ to be countably complete. As a result, we will be able to show that Ramsey cardinals are indestructible by a variety of forcing notions.</p>
+
+
+
+<h2>References</h2>
+<ol class="bibliography"><li><span id="gitman:welch">V. Gitman and P. D. Welch, “Ramsey-like cardinals II,” <i>The Journal of Symbolic Logic</i>, vol. 76, no. 2, pp. 541–560, 2011. </span></li>
+<li><span id="kunen:ultrapowers">K. Kunen, “Some applications of iterated ultrapowers in set theory,” <i>Ann. Math. Logic</i>, vol. 1, pp. 179–227, 1970. </span></li></ol>
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+		<img src="/images/github-octocat.png" />
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
